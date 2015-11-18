@@ -15,6 +15,7 @@
 		159118B41BF6957B00B01CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 159118B21BF6957B00B01CAD /* LaunchScreen.storyboard */; };
 		159118BF1BF6957C00B01CAD /* SpielTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159118BE1BF6957C00B01CAD /* SpielTests.swift */; };
 		159118CA1BF6957C00B01CAD /* SpielUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159118C91BF6957C00B01CAD /* SpielUITests.swift */; };
+		BCFD06761BFBC2FB008B8989 /* navigationBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BCFD06751BFBC2FB008B8989 /* navigationBackground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		159118C51BF6957C00B01CAD /* SpielUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpielUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		159118C91BF6957C00B01CAD /* SpielUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpielUITests.swift; sourceTree = "<group>"; };
 		159118CB1BF6957C00B01CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFD06751BFBC2FB008B8989 /* navigationBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navigationBackground.png; path = "/Users/addisonleong/Documents/School/2014-2015/CS 147/App/navigationBackground.png"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		159118A51BF6957B00B01CAD /* Spiel */ = {
 			isa = PBXGroup;
 			children = (
+				BCFD06771BFBC31E008B8989 /* images */,
 				159118A61BF6957B00B01CAD /* AppDelegate.swift */,
 				159118A81BF6957B00B01CAD /* ViewController.swift */,
 				159118AA1BF6957B00B01CAD /* Main.storyboard */,
@@ -126,6 +129,14 @@
 				159118CB1BF6957C00B01CAD /* Info.plist */,
 			);
 			path = SpielUITests;
+			sourceTree = "<group>";
+		};
+		BCFD06771BFBC31E008B8989 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BCFD06751BFBC2FB008B8989 /* navigationBackground.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				159118B41BF6957B00B01CAD /* LaunchScreen.storyboard in Resources */,
 				159118B11BF6957B00B01CAD /* Assets.xcassets in Resources */,
 				159118AC1BF6957B00B01CAD /* Main.storyboard in Resources */,
+				BCFD06761BFBC2FB008B8989 /* navigationBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +500,7 @@
 				159118D01BF6957C00B01CAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		159118D11BF6957C00B01CAD /* Build configuration list for PBXNativeTarget "SpielTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +509,7 @@
 				159118D31BF6957C00B01CAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		159118D41BF6957C00B01CAD /* Build configuration list for PBXNativeTarget "SpielUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +518,7 @@
 				159118D61BF6957C00B01CAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
