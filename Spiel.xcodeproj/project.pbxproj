@@ -18,6 +18,23 @@
 		BC77F0601BFC6891000E2D9A /* navigationBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77F05F1BFC6891000E2D9A /* navigationBackground.png */; };
 		BC77F0621BFC70E7000E2D9A /* spiel.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC77F0611BFC70E7000E2D9A /* spiel.xib */; };
 		BC77F0641BFC7594000E2D9A /* spielCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77F0631BFC7594000E2D9A /* spielCell.swift */; };
+		BC77F06D1BFC7BC1000E2D9A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0661BFC7BC1000E2D9A /* Bolts.framework */; };
+		BC77F06E1BFC7BC1000E2D9A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0671BFC7BC1000E2D9A /* Parse.framework */; };
+		BC77F06F1BFC7BC1000E2D9A /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0681BFC7BC1000E2D9A /* ParseCrashReporting.framework */; };
+		BC77F0701BFC7BC1000E2D9A /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0691BFC7BC1000E2D9A /* ParseFacebookUtils.framework */; };
+		BC77F0711BFC7BC1000E2D9A /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F06A1BFC7BC1000E2D9A /* ParseFacebookUtilsV4.framework */; };
+		BC77F0721BFC7BC1000E2D9A /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F06B1BFC7BC1000E2D9A /* ParseTwitterUtils.framework */; };
+		BC77F0731BFC7BC1000E2D9A /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F06C1BFC7BC1000E2D9A /* ParseUI.framework */; };
+		BC77F07E1BFC7C3F000E2D9A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0741BFC7C3F000E2D9A /* AudioToolbox.framework */; };
+		BC77F07F1BFC7C3F000E2D9A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0751BFC7C3F000E2D9A /* CFNetwork.framework */; };
+		BC77F0801BFC7C3F000E2D9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0761BFC7C3F000E2D9A /* CoreGraphics.framework */; };
+		BC77F0811BFC7C3F000E2D9A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0771BFC7C3F000E2D9A /* CoreLocation.framework */; };
+		BC77F0821BFC7C3F000E2D9A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0781BFC7C3F000E2D9A /* libsqlite3.tbd */; };
+		BC77F0831BFC7C3F000E2D9A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0791BFC7C3F000E2D9A /* libz.tbd */; };
+		BC77F0841BFC7C3F000E2D9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F07A1BFC7C3F000E2D9A /* QuartzCore.framework */; };
+		BC77F0851BFC7C3F000E2D9A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F07B1BFC7C3F000E2D9A /* Security.framework */; };
+		BC77F0861BFC7C3F000E2D9A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F07C1BFC7C3F000E2D9A /* StoreKit.framework */; };
+		BC77F0871BFC7C3F000E2D9A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F07D1BFC7C3F000E2D9A /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +72,23 @@
 		BC77F05F1BFC6891000E2D9A /* navigationBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBackground.png; sourceTree = "<group>"; };
 		BC77F0611BFC70E7000E2D9A /* spiel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = spiel.xib; sourceTree = "<group>"; };
 		BC77F0631BFC7594000E2D9A /* spielCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spielCell.swift; sourceTree = "<group>"; };
+		BC77F0661BFC7BC1000E2D9A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		BC77F0671BFC7BC1000E2D9A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		BC77F0681BFC7BC1000E2D9A /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		BC77F0691BFC7BC1000E2D9A /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		BC77F06A1BFC7BC1000E2D9A /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		BC77F06B1BFC7BC1000E2D9A /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		BC77F06C1BFC7BC1000E2D9A /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		BC77F0741BFC7C3F000E2D9A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BC77F0751BFC7C3F000E2D9A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BC77F0761BFC7C3F000E2D9A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BC77F0771BFC7C3F000E2D9A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BC77F0781BFC7C3F000E2D9A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		BC77F0791BFC7C3F000E2D9A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BC77F07A1BFC7C3F000E2D9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BC77F07B1BFC7C3F000E2D9A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BC77F07C1BFC7C3F000E2D9A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BC77F07D1BFC7C3F000E2D9A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +96,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC77F06E1BFC7BC1000E2D9A /* Parse.framework in Frameworks */,
+				BC77F06F1BFC7BC1000E2D9A /* ParseCrashReporting.framework in Frameworks */,
+				BC77F0731BFC7BC1000E2D9A /* ParseUI.framework in Frameworks */,
+				BC77F0701BFC7BC1000E2D9A /* ParseFacebookUtils.framework in Frameworks */,
+				BC77F06D1BFC7BC1000E2D9A /* Bolts.framework in Frameworks */,
+				BC77F0721BFC7BC1000E2D9A /* ParseTwitterUtils.framework in Frameworks */,
+				BC77F0711BFC7BC1000E2D9A /* ParseFacebookUtilsV4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +110,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC77F07E1BFC7C3F000E2D9A /* AudioToolbox.framework in Frameworks */,
+				BC77F07F1BFC7C3F000E2D9A /* CFNetwork.framework in Frameworks */,
+				BC77F0801BFC7C3F000E2D9A /* CoreGraphics.framework in Frameworks */,
+				BC77F0811BFC7C3F000E2D9A /* CoreLocation.framework in Frameworks */,
+				BC77F0821BFC7C3F000E2D9A /* libsqlite3.tbd in Frameworks */,
+				BC77F0831BFC7C3F000E2D9A /* libz.tbd in Frameworks */,
+				BC77F0841BFC7C3F000E2D9A /* QuartzCore.framework in Frameworks */,
+				BC77F0851BFC7C3F000E2D9A /* Security.framework in Frameworks */,
+				BC77F0861BFC7C3F000E2D9A /* StoreKit.framework in Frameworks */,
+				BC77F0871BFC7C3F000E2D9A /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +156,7 @@
 		159118A51BF6957B00B01CAD /* Spiel */ = {
 			isa = PBXGroup;
 			children = (
+				BC77F0651BFC7BAA000E2D9A /* Frameworks */,
 				BCFD06771BFBC31E008B8989 /* images */,
 				159118A61BF6957B00B01CAD /* AppDelegate.swift */,
 				159118A81BF6957B00B01CAD /* ViewController.swift */,
@@ -135,6 +187,30 @@
 				159118CB1BF6957C00B01CAD /* Info.plist */,
 			);
 			path = SpielUITests;
+			sourceTree = "<group>";
+		};
+		BC77F0651BFC7BAA000E2D9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC77F0741BFC7C3F000E2D9A /* AudioToolbox.framework */,
+				BC77F0751BFC7C3F000E2D9A /* CFNetwork.framework */,
+				BC77F0761BFC7C3F000E2D9A /* CoreGraphics.framework */,
+				BC77F0771BFC7C3F000E2D9A /* CoreLocation.framework */,
+				BC77F0781BFC7C3F000E2D9A /* libsqlite3.tbd */,
+				BC77F0791BFC7C3F000E2D9A /* libz.tbd */,
+				BC77F07A1BFC7C3F000E2D9A /* QuartzCore.framework */,
+				BC77F07B1BFC7C3F000E2D9A /* Security.framework */,
+				BC77F07C1BFC7C3F000E2D9A /* StoreKit.framework */,
+				BC77F07D1BFC7C3F000E2D9A /* SystemConfiguration.framework */,
+				BC77F0661BFC7BC1000E2D9A /* Bolts.framework */,
+				BC77F0671BFC7BC1000E2D9A /* Parse.framework */,
+				BC77F0681BFC7BC1000E2D9A /* ParseCrashReporting.framework */,
+				BC77F0691BFC7BC1000E2D9A /* ParseFacebookUtils.framework */,
+				BC77F06A1BFC7BC1000E2D9A /* ParseFacebookUtilsV4.framework */,
+				BC77F06B1BFC7BC1000E2D9A /* ParseTwitterUtils.framework */,
+				BC77F06C1BFC7BC1000E2D9A /* ParseUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BCFD06771BFBC31E008B8989 /* images */ = {
@@ -423,6 +499,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Spiel",
+				);
 				INFOPLIST_FILE = Spiel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spiel.Spiel;
@@ -434,6 +514,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Spiel",
+				);
 				INFOPLIST_FILE = Spiel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spiel.Spiel;
