@@ -20,11 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        Parse.enableLocalDatastore()
+        //Parse.enableLocalDatastore()
         
         // Initialize Parse.
-        Parse.setApplicationId("fN6ugS8kvjTVPYwci53f1bLEVvMpPe0LAa3iZtv4",
-            clientKey: "DXEJ9SWe3sQ9z5WGTQombjm2jUjjpYs7svHWnaBA")
+        Parse.setApplicationId("E8QzB98MtFNzbvuMc1YivgJSnEE1nFaNXlbcv74K",
+            clientKey: "qKTkDuusbHq3CBR8F9HNnhRUWDzNKskbFAVPHIhw")
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)

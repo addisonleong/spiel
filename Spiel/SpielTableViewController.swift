@@ -29,33 +29,33 @@ class SpielTableViewController: PFQueryTableViewController {
     }
     
     override func queryForTable() -> PFQuery {
-        let query = PFQuery(className: self.parseClassName!)
-        
+        let query = PFQuery(className: "Spiels")
         // If no objects are loaded in memory, we look to the cache first to fill the table
         // and then subsequently do a query against the network.
         if self.objects!.count == 0 {
             query.cachePolicy = .CacheThenNetwork
         }
-        
         query.orderByDescending("createdAt")
-        
         return query
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> spielCell? {
         let cellIdentifier = "cell"
         
-        var cell:spielCell? = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? spielCell
+        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? spielCell
         if cell == nil {
-            cell = NSBundle.mainBundle().loadNibNamed("spielCell", owner: self, options: nil)[0] as? spielCell
+            cell = NSBundle.mainBundle().loadNibNamed("spiel", owner: self, options: nil)[0] as? spielCell
+            //cell = PFTableViewCell(style: .Subtitle, reuseIdentifier: cellIdentifier)
         }
         
         // Configure the cell to show todo item with a priority at the bottom
         if let object = object {
-            cell!.spielTitle?.text = object["title"] as? String
+            cell!.spielTitle?.text = object.valueForKey("title") as? String
+            print(object.valueForKey("title") as? String)
 //            let priority = object["priority"] as? String
 //            cell!.detailTextLabel?.text = "Priority \(priority)"
         }
         
         return cell
-    }}
+    }
+}
