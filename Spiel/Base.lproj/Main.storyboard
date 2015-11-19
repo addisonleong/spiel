@@ -80,12 +80,12 @@
             <objects>
                 <tableViewController id="FtV-cf-CkZ" customClass="SpielTableViewController" customModule="Spiel" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="230" sectionHeaderHeight="28" sectionFooterHeight="28" id="7ln-GT-3Az">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="230" id="ELw-cz-wdp" customClass="spielCell" customModule="Spiel" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="600" height="230"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="230"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ELw-cz-wdp" id="yhN-0d-O60">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="229.5"/>
@@ -120,7 +120,7 @@
                         <viewControllerLayoutGuide type="bottom" id="WNJ-Nj-gVb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fO0-dl-xz2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -139,7 +139,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Fe3-nF-teV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6W3-1a-Ija">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -149,12 +149,13 @@
             </objects>
             <point key="canvasLocation" x="2658" y="-631"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Spiel Tab Bar Controller-->
         <scene sceneID="ACh-w9-nlf">
             <objects>
-                <tabBarController id="MOF-Xb-jcI" sceneMemberID="viewController">
+                <tabBarController id="MOF-Xb-jcI" customClass="spielTabBarController" customModule="Spiel" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedStatusBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="cyy-xz-kY0">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="cyy-xz-kY0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -244,17 +245,22 @@
             </objects>
             <point key="canvasLocation" x="1846" y="-631"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="EiU-SV-Zmv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V2R-8g-FBr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="M74-xc-87P"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V2R-8g-FBr" customClass="spielNavigationBar" customModule="Spiel" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="M74-xc-87P"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Obp-vQ-5rL">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Obp-vQ-5rL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="0ab-PZ-SSY">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="FtV-cf-CkZ" kind="relationship" relationship="rootViewController" id="5ju-s9-2LA"/>
                     </connections>

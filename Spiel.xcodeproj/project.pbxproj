@@ -28,6 +28,8 @@
 		BC77F08F1BFC7E4B000E2D9A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F07C1BFC7C3F000E2D9A /* StoreKit.framework */; };
 		BC77F0901BFC7E4B000E2D9A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F07D1BFC7C3F000E2D9A /* SystemConfiguration.framework */; };
 		BC77F0931BFC7E6B000E2D9A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0781BFC7C3F000E2D9A /* libsqlite3.tbd */; };
+		BC8AE0361BFE67A700BAFBDA /* spielNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8AE0351BFE67A700BAFBDA /* spielNavigationBar.swift */; };
+		BC8AE0381BFE6D8E00BAFBDA /* spielTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8AE0371BFE6D8E00BAFBDA /* spielTabBarController.swift */; };
 		BC98394E1BFD9005005F6955 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC98394D1BFD9005005F6955 /* Accounts.framework */; };
 		BC9839501BFD9066005F6955 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC98394F1BFD9066005F6955 /* Social.framework */; };
 		BC9839521BFD95DF005F6955 /* SpielTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9839511BFD95DF005F6955 /* SpielTableViewController.swift */; };
@@ -96,6 +98,8 @@
 		BC77F07C1BFC7C3F000E2D9A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		BC77F07D1BFC7C3F000E2D9A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BC77F0911BFC7E4B000E2D9A /* libedit.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libedit.3.tbd; path = usr/lib/libedit.3.tbd; sourceTree = SDKROOT; };
+		BC8AE0351BFE67A700BAFBDA /* spielNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spielNavigationBar.swift; sourceTree = "<group>"; };
+		BC8AE0371BFE6D8E00BAFBDA /* spielTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spielTabBarController.swift; sourceTree = "<group>"; };
 		BC98394D1BFD9005005F6955 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		BC98394F1BFD9066005F6955 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		BC9839511BFD95DF005F6955 /* SpielTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpielTableViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +212,8 @@
 				BC77F0611BFC70E7000E2D9A /* spiel.xib */,
 				BC77F0631BFC7594000E2D9A /* spielCell.swift */,
 				BC9839511BFD95DF005F6955 /* SpielTableViewController.swift */,
+				BC8AE0351BFE67A700BAFBDA /* spielNavigationBar.swift */,
+				BC8AE0371BFE6D8E00BAFBDA /* spielTabBarController.swift */,
 			);
 			path = Spiel;
 			sourceTree = "<group>";
@@ -388,8 +394,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				159118AF1BF6957B00B01CAD /* Spiel.xcdatamodeld in Sources */,
+				BC8AE0361BFE67A700BAFBDA /* spielNavigationBar.swift in Sources */,
 				BC9839521BFD95DF005F6955 /* SpielTableViewController.swift in Sources */,
 				159118A91BF6957B00B01CAD /* ViewController.swift in Sources */,
+				BC8AE0381BFE6D8E00BAFBDA /* spielTabBarController.swift in Sources */,
 				159118A71BF6957B00B01CAD /* AppDelegate.swift in Sources */,
 				BC77F0641BFC7594000E2D9A /* spielCell.swift in Sources */,
 			);
