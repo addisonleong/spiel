@@ -28,6 +28,9 @@
 		BC77F08F1BFC7E4B000E2D9A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F07C1BFC7C3F000E2D9A /* StoreKit.framework */; };
 		BC77F0901BFC7E4B000E2D9A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F07D1BFC7C3F000E2D9A /* SystemConfiguration.framework */; };
 		BC77F0931BFC7E6B000E2D9A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0781BFC7C3F000E2D9A /* libsqlite3.tbd */; };
+		BC98394E1BFD9005005F6955 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC98394D1BFD9005005F6955 /* Accounts.framework */; };
+		BC9839501BFD9066005F6955 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC98394F1BFD9066005F6955 /* Social.framework */; };
+		BC9839521BFD95DF005F6955 /* SpielTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9839511BFD95DF005F6955 /* SpielTableViewController.swift */; };
 		BCECD8E41BFC839F00F4E277 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0741BFC7C3F000E2D9A /* AudioToolbox.framework */; };
 		BCECD8E51BFC839F00F4E277 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0751BFC7C3F000E2D9A /* CFNetwork.framework */; };
 		BCECD8E61BFC839F00F4E277 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0761BFC7C3F000E2D9A /* CoreGraphics.framework */; };
@@ -93,6 +96,9 @@
 		BC77F07C1BFC7C3F000E2D9A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		BC77F07D1BFC7C3F000E2D9A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BC77F0911BFC7E4B000E2D9A /* libedit.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libedit.3.tbd; path = usr/lib/libedit.3.tbd; sourceTree = SDKROOT; };
+		BC98394D1BFD9005005F6955 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		BC98394F1BFD9066005F6955 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		BC9839511BFD95DF005F6955 /* SpielTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpielTableViewController.swift; sourceTree = "<group>"; };
 		BCECD8EE1BFC83D700F4E277 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Spiel/Bolts.framework; sourceTree = "<group>"; };
 		BCECD8EF1BFC83D700F4E277 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Spiel/Parse.framework; sourceTree = "<group>"; };
 		BCECD8F01BFC83D700F4E277 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = Spiel/ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -107,6 +113,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC9839501BFD9066005F6955 /* Social.framework in Frameworks */,
+				BC98394E1BFD9005005F6955 /* Accounts.framework in Frameworks */,
 				BCECD8FB1BFC83D700F4E277 /* ParseUI.framework in Frameworks */,
 				BCECD8E41BFC839F00F4E277 /* AudioToolbox.framework in Frameworks */,
 				BCECD8E51BFC839F00F4E277 /* CFNetwork.framework in Frameworks */,
@@ -199,6 +207,7 @@
 				159118AD1BF6957B00B01CAD /* Spiel.xcdatamodeld */,
 				BC77F0611BFC70E7000E2D9A /* spiel.xib */,
 				BC77F0631BFC7594000E2D9A /* spielCell.swift */,
+				BC9839511BFD95DF005F6955 /* SpielTableViewController.swift */,
 			);
 			path = Spiel;
 			sourceTree = "<group>";
@@ -224,6 +233,8 @@
 		2904EC8611C021C12DF94F3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC98394F1BFD9066005F6955 /* Social.framework */,
+				BC98394D1BFD9005005F6955 /* Accounts.framework */,
 				BCECD8EE1BFC83D700F4E277 /* Bolts.framework */,
 				BCECD8EF1BFC83D700F4E277 /* Parse.framework */,
 				BCECD8F01BFC83D700F4E277 /* ParseCrashReporting.framework */,
@@ -377,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				159118AF1BF6957B00B01CAD /* Spiel.xcdatamodeld in Sources */,
+				BC9839521BFD95DF005F6955 /* SpielTableViewController.swift in Sources */,
 				159118A91BF6957B00B01CAD /* ViewController.swift in Sources */,
 				159118A71BF6957B00B01CAD /* AppDelegate.swift in Sources */,
 				BC77F0641BFC7594000E2D9A /* spielCell.swift in Sources */,

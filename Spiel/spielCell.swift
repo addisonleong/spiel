@@ -8,8 +8,10 @@
 
 import Foundation
 import UIKit
+import ParseUI
+import Parse
 
-class spielCell: UITableViewCell {
+class spielCell: PFTableViewCell {
     @IBOutlet weak var mainImage:UIImageView?
     @IBOutlet weak var profileImage:UIImageView?
     @IBOutlet weak var profileName:UILabel?
@@ -22,4 +24,6 @@ class spielCell: UITableViewCell {
     @IBOutlet weak var spielLikeCount:UILabel?
     @IBOutlet weak var spielShare: UIImageView?
     @IBOutlet weak var spielShareLabel: UILabel?
+    
+    var parseObject:PFObject?
 }
