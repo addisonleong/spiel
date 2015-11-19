@@ -11,7 +11,14 @@ import ParseUI
 import Parse
 
 class SpielTableViewController: PFQueryTableViewController {
-
+    
+    @IBOutlet weak var navigationbar: UINavigationItem!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(named: "navigationBackground")!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 0, 0, 0), resizingMode: .Stretch), forBarMetrics: .Default)
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
     override init(style: UITableViewStyle, className: String?) {
         super.init(style: style, className: className)
         parseClassName = "Spiels"
@@ -51,7 +58,29 @@ class SpielTableViewController: PFQueryTableViewController {
         // Configure the cell to show todo item with a priority at the bottom
         if let object = object {
             cell!.spielTitle?.text = object.valueForKey("title") as? String
-            print(object.valueForKey("title") as? String)
+            cell!.profileName?.text = object.valueForKey("user") as? String
+            
+            
+            let description = object["description"] as? String
+            var index = description?.endIndex
+            var isLong = false
+            if (description?.characters.count > 90) {
+                index = description?.startIndex.advancedBy(90)
+                isLong = true
+            }
+            var substring = description?.substringToIndex(index!)
+            if (isLong) {
+                substring = substring! + "..."
+            }
+            
+            cell!.spielDescription?.text = substring as? String!
+            //cell!.spielDate?.text = object.valueForKey("createdAt") as? String
+            if (object["likes"] != nil) {
+                cell!.spielLikeCount?.text = object["likes"] as? String
+            }
+            else {
+                cell!.spielLikeCount?.text = "0"
+            }
 //            let priority = object["priority"] as? String
 //            cell!.detailTextLabel?.text = "Priority \(priority)"
         }

@@ -85,7 +85,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="230" id="ELw-cz-wdp" customClass="spielCell" customModule="Spiel" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="230"/>
+                                <rect key="frame" x="0.0" y="72" width="600" height="230"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ELw-cz-wdp" id="yhN-0d-O60">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="229.5"/>
@@ -103,6 +103,9 @@
                         <barButtonItem key="leftBarButtonItem" id="fWe-YH-zwc"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="navigationbar" destination="asa-qE-oDf" id="OlE-WG-Kxs"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ru3-Hs-RE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,7 +120,7 @@
                         <viewControllerLayoutGuide type="bottom" id="WNJ-Nj-gVb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fO0-dl-xz2">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -150,7 +153,7 @@
         <scene sceneID="ACh-w9-nlf">
             <objects>
                 <tabBarController id="MOF-Xb-jcI" sceneMemberID="viewController">
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="cyy-xz-kY0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
