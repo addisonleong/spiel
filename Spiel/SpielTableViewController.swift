@@ -81,7 +81,18 @@ class SpielTableViewController: PFQueryTableViewController {
             else {
                 cell!.spielLikeCount?.text = "0"
             }
-//            let priority = object["priority"] as? String
+            
+            let userImageFile = object["image"] as! PFFile
+            userImageFile.getDataInBackgroundWithBlock {
+                (imageData: NSData?, error: NSError?) -> Void in
+                if error == nil {
+                    let eventImage = UIImage(data:imageData!)
+                    cell!.mainImage!.image = eventImage
+                    // do something with image here
+                }
+            }
+            
+            //            let priority = object["priority"] as? String
 //            cell!.detailTextLabel?.text = "Priority \(priority)"
         }
         
