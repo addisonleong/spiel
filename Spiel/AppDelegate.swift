@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import Parse
 import Bolts
+import ParseUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

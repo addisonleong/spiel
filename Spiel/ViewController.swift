@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import ParseUI
+import Parse
+import Bolts
 
 class ViewController: UIViewController {
     @IBOutlet weak var navigationbar: UINavigationItem!
