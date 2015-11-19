@@ -45,16 +45,16 @@ class SpielTableViewController: PFQueryTableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         let cellIdentifier = "cell"
         
-        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? PFTableViewCell
+        var cell:spielCell? = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? spielCell
         if cell == nil {
-            cell = PFTableViewCell(style: .Subtitle, reuseIdentifier: cellIdentifier)
+            cell = NSBundle.mainBundle().loadNibNamed("spielCell", owner: self, options: nil)[0] as? spielCell
         }
         
         // Configure the cell to show todo item with a priority at the bottom
         if let object = object {
-            cell!.textLabel?.text = object["text"] as? String
-            let priority = object["priority"] as? String
-            cell!.detailTextLabel?.text = "Priority \(priority)"
+            cell!.spielTitle?.text = object["title"] as? String
+//            let priority = object["priority"] as? String
+//            cell!.detailTextLabel?.text = "Priority \(priority)"
         }
         
         return cell
