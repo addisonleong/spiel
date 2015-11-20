@@ -15,6 +15,8 @@
 		159118B41BF6957B00B01CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 159118B21BF6957B00B01CAD /* LaunchScreen.storyboard */; };
 		159118BF1BF6957C00B01CAD /* SpielTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159118BE1BF6957C00B01CAD /* SpielTests.swift */; };
 		159118CA1BF6957C00B01CAD /* SpielUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159118C91BF6957C00B01CAD /* SpielUITests.swift */; };
+		15D58CEE1BFEF2E000A386F8 /* SpielDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D58CED1BFEF2E000A386F8 /* SpielDetailViewController.swift */; };
+		15E576F01BFF0DB4009536E8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E576EF1BFF0DB4009536E8 /* ProfileViewController.swift */; };
 		BC77F0601BFC6891000E2D9A /* navigationBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77F05F1BFC6891000E2D9A /* navigationBackground.png */; };
 		BC77F0621BFC70E7000E2D9A /* spiel.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC77F0611BFC70E7000E2D9A /* spiel.xib */; };
 		BC77F0641BFC7594000E2D9A /* spielCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77F0631BFC7594000E2D9A /* spielCell.swift */; };
@@ -95,6 +97,8 @@
 		159118C51BF6957C00B01CAD /* SpielUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpielUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		159118C91BF6957C00B01CAD /* SpielUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpielUITests.swift; sourceTree = "<group>"; };
 		159118CB1BF6957C00B01CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15D58CED1BFEF2E000A386F8 /* SpielDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpielDetailViewController.swift; sourceTree = "<group>"; };
+		15E576EF1BFF0DB4009536E8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BC77F05F1BFC6891000E2D9A /* navigationBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBackground.png; sourceTree = "<group>"; };
 		BC77F0611BFC70E7000E2D9A /* spiel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = spiel.xib; sourceTree = "<group>"; };
 		BC77F0631BFC7594000E2D9A /* spielCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spielCell.swift; sourceTree = "<group>"; };
@@ -232,7 +236,9 @@
 				159118B51BF6957B00B01CAD /* Info.plist */,
 				159118AD1BF6957B00B01CAD /* Spiel.xcdatamodeld */,
 				BC77F0611BFC70E7000E2D9A /* spiel.xib */,
+				15E576EF1BFF0DB4009536E8 /* ProfileViewController.swift */,
 				BC77F0631BFC7594000E2D9A /* spielCell.swift */,
+				15D58CED1BFEF2E000A386F8 /* SpielDetailViewController.swift */,
 				BC9839511BFD95DF005F6955 /* SpielTableViewController.swift */,
 				BC8AE0351BFE67A700BAFBDA /* spielNavigationBar.swift */,
 				BC8AE0371BFE6D8E00BAFBDA /* spielTabBarController.swift */,
@@ -438,10 +444,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				159118AF1BF6957B00B01CAD /* Spiel.xcdatamodeld in Sources */,
+				15D58CEE1BFEF2E000A386F8 /* SpielDetailViewController.swift in Sources */,
 				BC8AE0361BFE67A700BAFBDA /* spielNavigationBar.swift in Sources */,
 				BC9839521BFD95DF005F6955 /* SpielTableViewController.swift in Sources */,
 				159118A91BF6957B00B01CAD /* ViewController.swift in Sources */,
 				BC8AE0381BFE6D8E00BAFBDA /* spielTabBarController.swift in Sources */,
+				15E576F01BFF0DB4009536E8 /* ProfileViewController.swift in Sources */,
 				159118A71BF6957B00B01CAD /* AppDelegate.swift in Sources */,
 				BC77F0641BFC7594000E2D9A /* spielCell.swift in Sources */,
 			);
