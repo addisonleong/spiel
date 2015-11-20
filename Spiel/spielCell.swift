@@ -26,4 +26,5 @@ class spielCell: PFTableViewCell {
     @IBOutlet weak var spielShareLabel: UILabel?
     
     var parseObject:PFObject?
+    var spielID = String()
 }

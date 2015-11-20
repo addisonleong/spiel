@@ -98,4 +98,18 @@ class SpielTableViewController: PFQueryTableViewController {
         
         return cell
     }
+    
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("Show Detail", sender: tableView.cellForRowAtIndexPath(indexPath))
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let dvc = segue.destinationViewController as? SpielDetailViewController {
+            if let cell = tableView.indexPathForSelectedRow {
+                let cellData = cell as? spielCell
+            }
+        }
+    }
+    
 }
