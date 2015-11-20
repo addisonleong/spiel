@@ -281,12 +281,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oGT-x6-OGa">
                                 <rect key="frame" x="43" y="87" width="110" height="103"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyU-mR-k7f">
-                                <rect key="frame" x="174" y="87" width="45" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiF-1F-vQf">
                                 <rect key="frame" x="177" y="122" width="73" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -327,10 +321,26 @@
                                 <rect key="frame" x="389" y="288" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyU-mR-k7f">
+                                <rect key="frame" x="177" y="87" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="vhn-6k-RGD"/>
+                    <connections>
+                        <outlet property="facebookButton" destination="SV1-DG-TfZ" id="JOk-yp-pmK"/>
+                        <outlet property="followButton" destination="RDd-hW-1G8" id="6Sg-QH-Znk"/>
+                        <outlet property="followers" destination="kLo-Ap-gzO" id="QAe-cN-YbZ"/>
+                        <outlet property="following" destination="Bjd-CY-gIV" id="od0-EA-SL2"/>
+                        <outlet property="name" destination="GyU-mR-k7f" id="IFg-u4-QHx"/>
+                        <outlet property="profileImage" destination="oGT-x6-OGa" id="xxN-xZ-Xvs"/>
+                        <outlet property="summary" destination="xiF-1F-vQf" id="h0d-rz-ZIT"/>
+                        <outlet property="twitterButton" destination="qRL-c1-N6G" id="AI4-5b-42x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pol-KL-lgt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

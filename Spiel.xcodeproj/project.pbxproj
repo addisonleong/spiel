@@ -63,6 +63,7 @@
 		BCECD8F91BFC83D700F4E277 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCECD8F21BFC83D700F4E277 /* ParseFacebookUtilsV4.framework */; };
 		BCECD8FA1BFC83D700F4E277 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCECD8F31BFC83D700F4E277 /* ParseTwitterUtils.framework */; };
 		BCECD8FB1BFC83D700F4E277 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCECD8F41BFC83D700F4E277 /* ParseUI.framework */; };
+		CE91CF511BFF107C00C8722D /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91CF501BFF107C00C8722D /* profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		BCECD8F21BFC83D700F4E277 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = Spiel/ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		BCECD8F31BFC83D700F4E277 /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseTwitterUtils.framework; path = Spiel/ParseTwitterUtils.framework; sourceTree = "<group>"; };
 		BCECD8F41BFC83D700F4E277 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = Spiel/ParseUI.framework; sourceTree = "<group>"; };
+		CE91CF501BFF107C00C8722D /* profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 				159118AD1BF6957B00B01CAD /* Spiel.xcdatamodeld */,
 				BC77F0611BFC70E7000E2D9A /* spiel.xib */,
 				15E576EF1BFF0DB4009536E8 /* ProfileViewController.swift */,
+				CE91CF501BFF107C00C8722D /* profile.swift */,
 				BC77F0631BFC7594000E2D9A /* spielCell.swift */,
 				15D58CED1BFEF2E000A386F8 /* SpielDetailViewController.swift */,
 				BC9839511BFD95DF005F6955 /* SpielTableViewController.swift */,
@@ -446,6 +449,7 @@
 				159118AF1BF6957B00B01CAD /* Spiel.xcdatamodeld in Sources */,
 				15D58CEE1BFEF2E000A386F8 /* SpielDetailViewController.swift in Sources */,
 				BC8AE0361BFE67A700BAFBDA /* spielNavigationBar.swift in Sources */,
+				CE91CF511BFF107C00C8722D /* profile.swift in Sources */,
 				BC9839521BFD95DF005F6955 /* SpielTableViewController.swift in Sources */,
 				159118A91BF6957B00B01CAD /* ViewController.swift in Sources */,
 				BC8AE0381BFE6D8E00BAFBDA /* spielTabBarController.swift in Sources */,
