@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -12,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="391" height="230"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gGg-oe-nTp" id="IbY-7D-BbB">
-                <rect key="frame" x="0.0" y="0.0" width="391" height="229"/>
+                <rect key="frame" x="0.0" y="0.0" width="391" height="229.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFy-AN-JbD">
@@ -22,15 +22,9 @@
                             <constraint firstAttribute="height" constant="86" id="mPF-Jz-Xs5"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5z-b3-nFb">
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5z-b3-nFb">
                         <rect key="frame" x="170" y="20" width="201" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxp-FB-aGz">
-                        <rect key="frame" x="124" y="71" width="247" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -76,6 +70,22 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxp-FB-aGz">
+                        <rect key="frame" x="124" y="70" width="247" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxJ-WH-hQM">
+                        <rect key="frame" x="170" y="16" width="201" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="profile:" destination="gGg-oe-nTp" eventType="touchDown" id="l2p-tw-qbN"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="iuU-Rw-PhB" firstAttribute="leading" secondItem="1Ik-Fc-T5N" secondAttribute="trailing" constant="8" id="2AT-Wy-tfd"/>
@@ -90,6 +100,7 @@
                     <constraint firstItem="zH2-Rw-1cF" firstAttribute="leading" secondItem="IbY-7D-BbB" secondAttribute="leadingMargin" constant="13" id="dpv-LX-u1X"/>
                     <constraint firstItem="W4f-Wz-9Gr" firstAttribute="leading" secondItem="iuU-Rw-PhB" secondAttribute="trailing" constant="3" id="duu-X7-7kX"/>
                     <constraint firstItem="9ki-vT-lEc" firstAttribute="leading" secondItem="UKE-Tx-rMB" secondAttribute="trailing" constant="13" id="jdx-wp-ChS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="RxJ-WH-hQM" secondAttribute="trailing" constant="12" id="nTM-PP-UgN"/>
                     <constraint firstItem="9ki-vT-lEc" firstAttribute="leading" secondItem="UKE-Tx-rMB" secondAttribute="trailing" constant="13" id="nfZ-54-ZDc"/>
                     <constraint firstAttribute="trailingMargin" secondItem="FxC-mm-Mxu" secondAttribute="trailing" constant="12" id="p4R-o7-PC6"/>
                     <constraint firstItem="iuU-Rw-PhB" firstAttribute="leading" secondItem="1Ik-Fc-T5N" secondAttribute="trailing" constant="8" id="vZp-1d-fer"/>
@@ -100,7 +111,7 @@
             <connections>
                 <outlet property="mainImage" destination="oFy-AN-JbD" id="DK9-tX-W9N"/>
                 <outlet property="profileImage" destination="Oea-uX-aiI" id="80G-2A-KQb"/>
-                <outlet property="profileName" destination="M5z-b3-nFb" id="QVr-bi-1ZZ"/>
+                <outlet property="profileName" destination="RxJ-WH-hQM" id="OR1-6g-dCB"/>
                 <outlet property="spielCommentCount" destination="UKE-Tx-rMB" id="unK-iW-h9X"/>
                 <outlet property="spielComments" destination="zH2-Rw-1cF" id="JqM-Q8-cma"/>
                 <outlet property="spielDate" destination="FxC-mm-Mxu" id="D28-Eh-J4U"/>

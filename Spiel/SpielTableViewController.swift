@@ -58,7 +58,8 @@ class SpielTableViewController: PFQueryTableViewController {
         // Configure the cell to show todo item with a priority at the bottom
         if let object = object {
             cell!.spielTitle?.text = object.valueForKey("title") as? String
-            cell!.profileName?.text = object.valueForKey("user") as? String
+//            cell!.profileName?.titleLabel!.text = object.valueForKey("user") as? String
+            cell!.profileName?.setTitle(object.valueForKey("user") as? String, forState: UIControlState.Normal)
             
             
             let description = object["description"] as? String
@@ -91,6 +92,18 @@ class SpielTableViewController: PFQueryTableViewController {
                     // do something with image here
                 }
             }
+            
+            cell!.spielID = (object.valueForKey("objectId") as? String)!
+            
+//            let user = object["user"] as! PFFile
+//            userImageFile.getDataInBackgroundWithBlock {
+//                (imageData: NSData?, error: NSError?) -> Void in
+//                if error == nil {
+//                    let eventImage = UIImage(data:imageData!)
+//                    cell!.mainImage!.image = eventImage
+//                    // do something with image here
+//                }
+//            }
             
             //            let priority = object["priority"] as? String
 //            cell!.detailTextLabel?.text = "Priority \(priority)"

@@ -14,7 +14,7 @@ import Parse
 class spielCell: PFTableViewCell {
     @IBOutlet weak var mainImage:UIImageView?
     @IBOutlet weak var profileImage:UIImageView?
-    @IBOutlet weak var profileName:UILabel?
+    @IBOutlet weak var profileName:UIButton?
     @IBOutlet weak var spielDate:UILabel?
     @IBOutlet weak var spielTitle:UILabel?
     @IBOutlet weak var spielDescription:UILabel?
@@ -27,4 +27,8 @@ class spielCell: PFTableViewCell {
     
     var parseObject:PFObject?
     var spielID = String()
+    
+    @IBAction func profile(sender: AnyObject) {
+        
+    }
 }

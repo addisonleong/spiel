@@ -10,7 +10,7 @@ import Foundation
 import ParseUI
 import Parse
 
-class ProfileViewController : PFQueryTableViewController {
+class ProfileViewController : UIViewController {
 
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var name: UILabel!
@@ -21,15 +21,25 @@ class ProfileViewController : PFQueryTableViewController {
     @IBOutlet weak var facebookButton: UIImageView!
     @IBOutlet weak var twitterButton: UIImageView!
     
-    override func queryForTable() -> PFQuery {
-        let query = PFQuery(className: "User")
-        // If no objects are loaded in memory, we look to the cache first to fill the table
-        // and then subsequently do a query against the network.
-        if self.objects!.count == 0 {
-            query.cachePolicy = .CacheThenNetwork
-        }
-        query.orderByDescending("createdAt")
-        return query
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+//    override func queryForTable() -> PFQuery {
+//        let query = PFQuery(className: "User")
+//        // If no objects are loaded in memory, we look to the cache first to fill the table
+//        // and then subsequently do a query against the network.
+//        if self.objects!.count == 0 {
+//            query.cachePolicy = .CacheThenNetwork
+//        }
+//        query.orderByDescending("createdAt")
+//        return query
+//    }
     
 }
