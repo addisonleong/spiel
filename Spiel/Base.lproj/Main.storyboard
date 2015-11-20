@@ -111,7 +111,7 @@
             </objects>
             <point key="canvasLocation" x="1838" y="594"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="mVO-uA-oEE">
             <objects>
                 <viewController id="d4q-Zn-0eP" sceneMemberID="viewController">
@@ -124,7 +124,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="k3w-Es-w9K"/>
+                    <tabBarItem key="tabBarItem" title="" image="posticon.png" id="k3w-Es-w9K">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USe-We-Six" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,7 +157,7 @@
                 <tabBarController id="MOF-Xb-jcI" customClass="spielTabBarController" customModule="Spiel" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="cyy-xz-kY0">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" itemPositioning="fill" id="cyy-xz-kY0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -226,11 +228,13 @@
             </objects>
             <point key="canvasLocation" x="2704" y="705"/>
         </scene>
-        <!--Item 1-->
+        <!--Navigation Controller-->
         <scene sceneID="WfO-JF-TVG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Zw-m0-Znc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="DgK-xU-qq5"/>
+                    <tabBarItem key="tabBarItem" title="" image="discovericon.png" id="DgK-xU-qq5">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="chx-Lx-eV1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -245,11 +249,13 @@
             </objects>
             <point key="canvasLocation" x="1846" y="-631"/>
         </scene>
-        <!--Home-->
+        <!--Spiel Navigation Bar-->
         <scene sceneID="EiU-SV-Zmv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V2R-8g-FBr" customClass="spielNavigationBar" customModule="Spiel" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="M74-xc-87P"/>
+                    <tabBarItem key="tabBarItem" title="" image="homeicon.png" id="M74-xc-87P">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Obp-vQ-5rL">
@@ -270,4 +276,9 @@
             <point key="canvasLocation" x="1026" y="594"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="discovericon.png" width="30" height="30"/>
+        <image name="homeicon.png" width="30" height="30"/>
+        <image name="posticon.png" width="30" height="30"/>
+    </resources>
 </document>
