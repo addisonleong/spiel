@@ -32,35 +32,4 @@ class ProfileViewController : PFQueryTableViewController {
         return query
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell {
-        
-        //if let cityName = object?["city"] as? String{
-            name?.text = "Joanne"
-        //}
-//        if let address = object?["address"] as? String{
-//            cell?.meetAddress?.text = address;
-//        }
-//        if let date = object?["date"] as? String{
-//            cell?.meetDate?.text = date;
-//        }
-//        if let time = object?["time"] as? String{
-//            cell?.meetTime?.text = time;
-//        }
-//        if let people = object?["numberOfComming"] as? Int{
-//            cell?.peopleAttending?.text = "\(people)";
-//        }
-//        
-//        if let thumbnail = object?["meetImg"] as? PFFile {
-//            
-//            thumbnail.getDataInBackgroundWithBlock{
-//                (imageData, error) -> Void in
-//                if error == nil {
-//                    let image = UIImage(data: imageData!)
-//                    cell.meetImage.image = image
-//                }
-//            }
-//        }
-//    }
-    }
-
 }
