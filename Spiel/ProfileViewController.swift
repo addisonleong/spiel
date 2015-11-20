@@ -61,8 +61,6 @@ class ProfileViewController : PFQueryTableViewController {
 //            }
 //        }
 //    }
-
-    return object
-    
     }
+
 }
