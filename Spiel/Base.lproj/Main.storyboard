@@ -88,7 +88,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="230"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ELw-cz-wdp" id="yhN-0d-O60">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="229.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="229"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -149,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gn6-3d-pUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2658" y="-631"/>
+            <point key="canvasLocation" x="3470" y="-631"/>
         </scene>
         <!--Spiel Tab Bar Controller-->
         <scene sceneID="ACh-w9-nlf">
@@ -166,6 +166,8 @@
                         <segue destination="V2R-8g-FBr" kind="relationship" relationship="viewControllers" id="6lE-ce-Gwl"/>
                         <segue destination="5Zw-m0-Znc" kind="relationship" relationship="viewControllers" id="jP8-ef-9mb"/>
                         <segue destination="d4q-Zn-0eP" kind="relationship" relationship="viewControllers" id="dlK-vd-Xib"/>
+                        <segue destination="afl-fX-Djo" kind="relationship" relationship="viewControllers" id="gE4-Ee-vsm"/>
+                        <segue destination="Wcw-IT-EiL" kind="relationship" relationship="viewControllers" id="zRq-Fm-PXF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oor-2g-9o2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -228,6 +230,56 @@
             </objects>
             <point key="canvasLocation" x="2704" y="705"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Y63-td-GWz">
+            <objects>
+                <tableViewController id="bT3-Pn-T88" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="YeQ-a4-3cu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ptw-ah-9t5">
+                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ptw-ah-9t5" id="0Av-a9-v1v">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bT3-Pn-T88" id="BSN-fe-wKp"/>
+                            <outlet property="delegate" destination="bT3-Pn-T88" id="9wk-Ov-NYm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="lb1-hh-4YL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XNg-WT-wMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853" y="-1106"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ybT-UW-mpg">
+            <objects>
+                <viewController id="Wcw-IT-EiL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pgY-Po-knP"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZW3-tb-9Y0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hPx-m6-dI5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="profileicon.png" id="wKg-gP-AyE">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pol-KL-lgt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2511" y="-1308"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="WfO-JF-TVG">
             <objects>
@@ -247,7 +299,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ulR-jH-dTS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1846" y="-631"/>
+            <point key="canvasLocation" x="2658" y="-631"/>
         </scene>
         <!--Spiel Navigation Bar-->
         <scene sceneID="EiU-SV-Zmv">
@@ -275,10 +327,33 @@
             </objects>
             <point key="canvasLocation" x="1026" y="594"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bha-cl-ela">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="afl-fX-Djo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="notificationicon.png" id="mCC-9d-VZZ">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hLY-Uy-BR0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bT3-Pn-T88" kind="relationship" relationship="rootViewController" id="owR-aM-OaD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uBB-Ng-pwN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1141" y="-1071"/>
+        </scene>
     </scenes>
     <resources>
         <image name="discovericon.png" width="30" height="30"/>
         <image name="homeicon.png" width="30" height="30"/>
+        <image name="notificationicon.png" width="30" height="30"/>
         <image name="posticon.png" width="30" height="30"/>
+        <image name="profileicon.png" width="30" height="30"/>
     </resources>
 </document>
