@@ -266,10 +266,10 @@
             </objects>
             <point key="canvasLocation" x="1469" y="-1241"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="ybT-UW-mpg">
             <objects>
-                <viewController id="Wcw-IT-EiL" sceneMemberID="viewController">
+                <viewController id="Wcw-IT-EiL" customClass="ProfileViewController" customModule="Spiel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pgY-Po-knP"/>
                         <viewControllerLayoutGuide type="bottom" id="ZW3-tb-9Y0"/>
