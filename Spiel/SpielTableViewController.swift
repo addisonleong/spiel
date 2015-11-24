@@ -80,7 +80,21 @@ class SpielTableViewController: PFQueryTableViewController {
                 cell!.spielLikeCount?.text = object["likes"] as? String
             }
             else {
-                cell!.spielLikeCount?.text = "0"
+                cell!.spielLikeCount?.text = "30 likes"
+            }
+            
+            if (object["comments"] != nil) {
+                cell!.spielCommentCount?.text = object["comments"] as? String
+            }
+            else {
+                cell!.spielCommentCount?.text = "10 comments"
+            }
+            
+            if (object["shares"] != nil) {
+                cell!.spielShareLabel?.text = object["shares"] as? String
+            }
+            else {
+                cell!.spielShareLabel?.text = "0 shares"
             }
             
             let userImageFile = object["image"] as! PFFile
@@ -89,7 +103,8 @@ class SpielTableViewController: PFQueryTableViewController {
                 if error == nil {
                     let eventImage = UIImage(data:imageData!)
                     cell!.mainImage!.image = eventImage
-                    // do something with image here
+                    cell!.mainImage!.layer.cornerRadius = 7
+                    cell!.mainImage!.layer.masksToBounds = true
                 }
             }
             
@@ -97,6 +112,25 @@ class SpielTableViewController: PFQueryTableViewController {
             cell!.spielDate?.text = object["createdAt"] as? String
             
             let username = object["user"] as? String
+            let query = PFUser.query()
+            query?.whereKey("username", equalTo: username!)
+            query?.findObjectsInBackgroundWithBlock {
+                (objects: [PFObject]?, error: NSError?) -> Void in
+                if let error = error {
+                    print(error)
+                } else {
+                    let userImageFile = objects![0]["profile_photo"] as! PFFile
+                    userImageFile.getDataInBackgroundWithBlock {
+                        (imageData: NSData?, error: NSError?) -> Void in
+                        if error == nil {
+                            let eventImage = UIImage(data:imageData!)
+                            cell!.profileImage!.image = eventImage
+                            cell!.profileImage!.layer.cornerRadius = 21
+                            cell!.profileImage!.layer.masksToBounds = true
+                        }
+                    }
+                }
+            }
             
 //            let user = object["user"] as! PFFile
 //            userImageFile.getDataInBackgroundWithBlock {

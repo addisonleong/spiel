@@ -17,6 +17,12 @@
 		159118CA1BF6957C00B01CAD /* SpielUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159118C91BF6957C00B01CAD /* SpielUITests.swift */; };
 		15D58CEE1BFEF2E000A386F8 /* SpielDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D58CED1BFEF2E000A386F8 /* SpielDetailViewController.swift */; };
 		15E576F01BFF0DB4009536E8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E576EF1BFF0DB4009536E8 /* ProfileViewController.swift */; };
+		BC003B0B1C04C17900E08E43 /* comments.png in Resources */ = {isa = PBXBuildFile; fileRef = BC003B051C04C17900E08E43 /* comments.png */; };
+		BC003B0C1C04C17900E08E43 /* comments@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC003B061C04C17900E08E43 /* comments@2x.png */; };
+		BC003B0D1C04C17900E08E43 /* likes.png in Resources */ = {isa = PBXBuildFile; fileRef = BC003B071C04C17900E08E43 /* likes.png */; };
+		BC003B0E1C04C17900E08E43 /* likes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC003B081C04C17900E08E43 /* likes@2x.png */; };
+		BC003B0F1C04C17900E08E43 /* shares.png in Resources */ = {isa = PBXBuildFile; fileRef = BC003B091C04C17900E08E43 /* shares.png */; };
+		BC003B101C04C17900E08E43 /* shares@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC003B0A1C04C17900E08E43 /* shares@2x.png */; };
 		BC77F0601BFC6891000E2D9A /* navigationBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77F05F1BFC6891000E2D9A /* navigationBackground.png */; };
 		BC77F0621BFC70E7000E2D9A /* spiel.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC77F0611BFC70E7000E2D9A /* spiel.xib */; };
 		BC77F0641BFC7594000E2D9A /* spielCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77F0631BFC7594000E2D9A /* spielCell.swift */; };
@@ -100,6 +106,12 @@
 		159118CB1BF6957C00B01CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15D58CED1BFEF2E000A386F8 /* SpielDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpielDetailViewController.swift; sourceTree = "<group>"; };
 		15E576EF1BFF0DB4009536E8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BC003B051C04C17900E08E43 /* comments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comments.png; sourceTree = "<group>"; };
+		BC003B061C04C17900E08E43 /* comments@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comments@2x.png"; sourceTree = "<group>"; };
+		BC003B071C04C17900E08E43 /* likes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likes.png; sourceTree = "<group>"; };
+		BC003B081C04C17900E08E43 /* likes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "likes@2x.png"; sourceTree = "<group>"; };
+		BC003B091C04C17900E08E43 /* shares.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shares.png; sourceTree = "<group>"; };
+		BC003B0A1C04C17900E08E43 /* shares@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shares@2x.png"; sourceTree = "<group>"; };
 		BC77F05F1BFC6891000E2D9A /* navigationBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBackground.png; sourceTree = "<group>"; };
 		BC77F0611BFC70E7000E2D9A /* spiel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = spiel.xib; sourceTree = "<group>"; };
 		BC77F0631BFC7594000E2D9A /* spielCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spielCell.swift; sourceTree = "<group>"; };
@@ -286,6 +298,12 @@
 		BCFD06771BFBC31E008B8989 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BC003B051C04C17900E08E43 /* comments.png */,
+				BC003B061C04C17900E08E43 /* comments@2x.png */,
+				BC003B071C04C17900E08E43 /* likes.png */,
+				BC003B081C04C17900E08E43 /* likes@2x.png */,
+				BC003B091C04C17900E08E43 /* shares.png */,
+				BC003B0A1C04C17900E08E43 /* shares@2x.png */,
 				BC77F05F1BFC6891000E2D9A /* navigationBackground.png */,
 				BC9111B91BFE943B000B886F /* selectedTab.png */,
 				BC9111C71BFEA910000B886F /* discovericon.png */,
@@ -406,9 +424,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC003B101C04C17900E08E43 /* shares@2x.png in Resources */,
 				BC9111D31BFEA910000B886F /* homeicon.png in Resources */,
+				BC003B0B1C04C17900E08E43 /* comments.png in Resources */,
 				BC9111D21BFEA910000B886F /* discovericon@2x.png in Resources */,
 				159118B41BF6957B00B01CAD /* LaunchScreen.storyboard in Resources */,
+				BC003B0D1C04C17900E08E43 /* likes.png in Resources */,
+				BC003B0E1C04C17900E08E43 /* likes@2x.png in Resources */,
 				159118B11BF6957B00B01CAD /* Assets.xcassets in Resources */,
 				BC9111D61BFEA910000B886F /* notificationicon@2x.png in Resources */,
 				BC9111D81BFEA910000B886F /* posticon@2x.png in Resources */,
@@ -417,6 +439,8 @@
 				BC9111D91BFEA910000B886F /* profileicon.png in Resources */,
 				BC9111DA1BFEA910000B886F /* profileicon@2x.png in Resources */,
 				159118AC1BF6957B00B01CAD /* Main.storyboard in Resources */,
+				BC003B0F1C04C17900E08E43 /* shares.png in Resources */,
+				BC003B0C1C04C17900E08E43 /* comments@2x.png in Resources */,
 				BC9111D41BFEA910000B886F /* homeicon@2x.png in Resources */,
 				BC77F0601BFC6891000E2D9A /* navigationBackground.png in Resources */,
 				BC77F0621BFC70E7000E2D9A /* spiel.xib in Resources */,
