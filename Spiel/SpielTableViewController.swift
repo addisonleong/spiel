@@ -94,6 +94,9 @@ class SpielTableViewController: PFQueryTableViewController {
             }
             
             cell!.spielID = (object.valueForKey("objectId") as? String)!
+            cell!.spielDate?.text = object["createdAt"] as? String
+            
+            let username = object["user"] as? String
             
 //            let user = object["user"] as! PFFile
 //            userImageFile.getDataInBackgroundWithBlock {
