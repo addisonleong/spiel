@@ -76,6 +76,7 @@ class SpielTableViewController: PFQueryTableViewController {
             
             cell!.spielDescription?.text = substring as? String!
             //cell!.spielDate?.text = object.valueForKey("createdAt") as? String
+            cell!.spielDescriptionFull = (object["description"] as? String)!
             if (object["likes"] != nil) {
                 cell!.spielLikeCount?.text = object["likes"] as? String
             }
@@ -156,8 +157,9 @@ class SpielTableViewController: PFQueryTableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let dvc = segue.destinationViewController as? SpielDetailViewController {
-            if let cell = tableView.indexPathForSelectedRow {
-                let cellData = cell as? spielCell
+            if let index = tableView.indexPathForSelectedRow {
+                let cellData = tableView.cellForRowAtIndexPath(index) as? spielCell
+                
             }
         }
     }

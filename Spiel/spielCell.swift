@@ -27,6 +27,7 @@ class spielCell: PFTableViewCell {
     
     var parseObject:PFObject?
     var spielID = String()
+    var spielDescriptionFull = String()
     
     @IBAction func profile(sender: AnyObject) {
         
