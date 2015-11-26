@@ -132,6 +132,7 @@ class SpielTableViewController: PFQueryTableViewController {
                     }
                 }
             }
+            cell!.profileName!.addTarget(self, action: "goToProfile", forControlEvents: .TouchUpInside)
             
 //            let user = object["user"] as! PFFile
 //            userImageFile.getDataInBackgroundWithBlock {
@@ -155,11 +156,23 @@ class SpielTableViewController: PFQueryTableViewController {
         performSegueWithIdentifier("Show Detail", sender: tableView.cellForRowAtIndexPath(indexPath))
     }
     
+    func goToProfile() {
+        self.performSegueWithIdentifier("toProfile", sender: self)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let dvc = segue.destinationViewController as? SpielDetailViewController {
-            if let index = tableView.indexPathForSelectedRow {
-                let cellData = tableView.cellForRowAtIndexPath(index) as? spielCell
-                
+        if (segue.identifier == "Show Detail") {
+            if let dvc = segue.destinationViewController as? SpielDetailViewController {
+                if let index = tableView.indexPathForSelectedRow {
+                    let cellData = tableView.cellForRowAtIndexPath(index) as? spielCell
+                    dvc.userName = (cellData!.profileName?.titleLabel!.text)!
+                    dvc.userPic = (cellData!.profileImage?.image)!
+                    dvc.spielImage1 = (cellData!.mainImage?.image)!
+                    dvc.spielTitle1 = (cellData!.spielTitle?.text)!
+                    dvc.spielDescription1 = cellData!.spielDescriptionFull
+                    dvc.spielComments1 = (cellData!.spielCommentCount?.text)!
+                    dvc.spielLikes1 = (cellData!.spielLikeCount?.text)!
+                }
             }
         }
     }

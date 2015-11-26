@@ -1,8 +1,8 @@
 //
-//  SpielDetailViewController.swift
+//  userProfileViewController.swift
 //  Spiel
 //
-//  Created by SunMi Lee on 11/19/15.
+//  Created by Addison Leong on 11/25/15.
 //  Copyright © 2015 SunMi Lee. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import Foundation
 import ParseUI
 import Parse
 
-class SpielDetailViewController: UIViewController {
+class userProfileViewController: UIViewController {
     
     var userName = String()
     var userSummary = String()

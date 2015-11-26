@@ -23,6 +23,7 @@
 		BC003B0E1C04C17900E08E43 /* likes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC003B081C04C17900E08E43 /* likes@2x.png */; };
 		BC003B0F1C04C17900E08E43 /* shares.png in Resources */ = {isa = PBXBuildFile; fileRef = BC003B091C04C17900E08E43 /* shares.png */; };
 		BC003B101C04C17900E08E43 /* shares@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC003B0A1C04C17900E08E43 /* shares@2x.png */; };
+		BC0171A71C06CEA000C156FF /* userProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0171A61C06CEA000C156FF /* userProfileViewController.swift */; };
 		BC77F0601BFC6891000E2D9A /* navigationBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77F05F1BFC6891000E2D9A /* navigationBackground.png */; };
 		BC77F0621BFC70E7000E2D9A /* spiel.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC77F0611BFC70E7000E2D9A /* spiel.xib */; };
 		BC77F0641BFC7594000E2D9A /* spielCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77F0631BFC7594000E2D9A /* spielCell.swift */; };
@@ -112,6 +113,7 @@
 		BC003B081C04C17900E08E43 /* likes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "likes@2x.png"; sourceTree = "<group>"; };
 		BC003B091C04C17900E08E43 /* shares.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shares.png; sourceTree = "<group>"; };
 		BC003B0A1C04C17900E08E43 /* shares@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shares@2x.png"; sourceTree = "<group>"; };
+		BC0171A61C06CEA000C156FF /* userProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userProfileViewController.swift; sourceTree = "<group>"; };
 		BC77F05F1BFC6891000E2D9A /* navigationBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBackground.png; sourceTree = "<group>"; };
 		BC77F0611BFC70E7000E2D9A /* spiel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = spiel.xib; sourceTree = "<group>"; };
 		BC77F0631BFC7594000E2D9A /* spielCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spielCell.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				BC9839511BFD95DF005F6955 /* SpielTableViewController.swift */,
 				BC8AE0351BFE67A700BAFBDA /* spielNavigationBar.swift */,
 				BC8AE0371BFE6D8E00BAFBDA /* spielTabBarController.swift */,
+				BC0171A61C06CEA000C156FF /* userProfileViewController.swift */,
 			);
 			path = Spiel;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				159118AF1BF6957B00B01CAD /* Spiel.xcdatamodeld in Sources */,
+				BC0171A71C06CEA000C156FF /* userProfileViewController.swift in Sources */,
 				15D58CEE1BFEF2E000A386F8 /* SpielDetailViewController.swift in Sources */,
 				BC8AE0361BFE67A700BAFBDA /* spielNavigationBar.swift in Sources */,
 				CE91CF511BFF107C00C8722D /* profile.swift in Sources */,
