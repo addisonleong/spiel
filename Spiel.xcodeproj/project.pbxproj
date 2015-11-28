@@ -24,6 +24,12 @@
 		BC003B0F1C04C17900E08E43 /* shares.png in Resources */ = {isa = PBXBuildFile; fileRef = BC003B091C04C17900E08E43 /* shares.png */; };
 		BC003B101C04C17900E08E43 /* shares@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC003B0A1C04C17900E08E43 /* shares@2x.png */; };
 		BC0171A71C06CEA000C156FF /* userProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0171A61C06CEA000C156FF /* userProfileViewController.swift */; };
+		BC5B25031C0971CD00115CF9 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5B24FF1C0971CD00115CF9 /* facebook.png */; };
+		BC5B25041C0971CD00115CF9 /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5B25001C0971CD00115CF9 /* facebook@2x.png */; };
+		BC5B25051C0971CD00115CF9 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5B25011C0971CD00115CF9 /* twitter.png */; };
+		BC5B25061C0971CD00115CF9 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5B25021C0971CD00115CF9 /* twitter@2x.png */; };
+		BC5B25081C0972E900115CF9 /* userSpiel.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5B25071C0972E900115CF9 /* userSpiel.xib */; };
+		BC5B250A1C0974AF00115CF9 /* userSpielCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5B25091C0974AF00115CF9 /* userSpielCell.swift */; };
 		BC77F0601BFC6891000E2D9A /* navigationBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77F05F1BFC6891000E2D9A /* navigationBackground.png */; };
 		BC77F0621BFC70E7000E2D9A /* spiel.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC77F0611BFC70E7000E2D9A /* spiel.xib */; };
 		BC77F0641BFC7594000E2D9A /* spielCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77F0631BFC7594000E2D9A /* spielCell.swift */; };
@@ -53,6 +59,9 @@
 		BC98394E1BFD9005005F6955 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC98394D1BFD9005005F6955 /* Accounts.framework */; };
 		BC9839501BFD9066005F6955 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC98394F1BFD9066005F6955 /* Social.framework */; };
 		BC9839521BFD95DF005F6955 /* SpielTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9839511BFD95DF005F6955 /* SpielTableViewController.swift */; };
+		BCBFDD111C08E58B007D755F /* following.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBFDD0F1C08E58B007D755F /* following.png */; };
+		BCBFDD121C08E58B007D755F /* following@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBFDD101C08E58B007D755F /* following@2x.png */; };
+		BCBFDD141C08E8A1007D755F /* userSpielsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDD131C08E8A1007D755F /* userSpielsTableViewController.swift */; };
 		BCECD8E41BFC839F00F4E277 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0741BFC7C3F000E2D9A /* AudioToolbox.framework */; };
 		BCECD8E51BFC839F00F4E277 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0751BFC7C3F000E2D9A /* CFNetwork.framework */; };
 		BCECD8E61BFC839F00F4E277 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0761BFC7C3F000E2D9A /* CoreGraphics.framework */; };
@@ -114,6 +123,12 @@
 		BC003B091C04C17900E08E43 /* shares.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shares.png; sourceTree = "<group>"; };
 		BC003B0A1C04C17900E08E43 /* shares@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shares@2x.png"; sourceTree = "<group>"; };
 		BC0171A61C06CEA000C156FF /* userProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userProfileViewController.swift; sourceTree = "<group>"; };
+		BC5B24FF1C0971CD00115CF9 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		BC5B25001C0971CD00115CF9 /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@2x.png"; sourceTree = "<group>"; };
+		BC5B25011C0971CD00115CF9 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		BC5B25021C0971CD00115CF9 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
+		BC5B25071C0972E900115CF9 /* userSpiel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = userSpiel.xib; sourceTree = "<group>"; };
+		BC5B25091C0974AF00115CF9 /* userSpielCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userSpielCell.swift; sourceTree = "<group>"; };
 		BC77F05F1BFC6891000E2D9A /* navigationBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBackground.png; sourceTree = "<group>"; };
 		BC77F0611BFC70E7000E2D9A /* spiel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = spiel.xib; sourceTree = "<group>"; };
 		BC77F0631BFC7594000E2D9A /* spielCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spielCell.swift; sourceTree = "<group>"; };
@@ -144,6 +159,9 @@
 		BC98394D1BFD9005005F6955 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		BC98394F1BFD9066005F6955 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		BC9839511BFD95DF005F6955 /* SpielTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpielTableViewController.swift; sourceTree = "<group>"; };
+		BCBFDD0F1C08E58B007D755F /* following.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = following.png; sourceTree = "<group>"; };
+		BCBFDD101C08E58B007D755F /* following@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "following@2x.png"; sourceTree = "<group>"; };
+		BCBFDD131C08E8A1007D755F /* userSpielsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userSpielsTableViewController.swift; sourceTree = "<group>"; };
 		BCECD8EE1BFC83D700F4E277 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Spiel/Bolts.framework; sourceTree = "<group>"; };
 		BCECD8EF1BFC83D700F4E277 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Spiel/Parse.framework; sourceTree = "<group>"; };
 		BCECD8F01BFC83D700F4E277 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = Spiel/ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -252,14 +270,17 @@
 				159118B51BF6957B00B01CAD /* Info.plist */,
 				159118AD1BF6957B00B01CAD /* Spiel.xcdatamodeld */,
 				BC77F0611BFC70E7000E2D9A /* spiel.xib */,
+				BC5B25071C0972E900115CF9 /* userSpiel.xib */,
 				15E576EF1BFF0DB4009536E8 /* ProfileViewController.swift */,
 				CE91CF501BFF107C00C8722D /* profile.swift */,
 				BC77F0631BFC7594000E2D9A /* spielCell.swift */,
+				BC5B25091C0974AF00115CF9 /* userSpielCell.swift */,
 				15D58CED1BFEF2E000A386F8 /* SpielDetailViewController.swift */,
 				BC9839511BFD95DF005F6955 /* SpielTableViewController.swift */,
 				BC8AE0351BFE67A700BAFBDA /* spielNavigationBar.swift */,
 				BC8AE0371BFE6D8E00BAFBDA /* spielTabBarController.swift */,
 				BC0171A61C06CEA000C156FF /* userProfileViewController.swift */,
+				BCBFDD131C08E8A1007D755F /* userSpielsTableViewController.swift */,
 			);
 			path = Spiel;
 			sourceTree = "<group>";
@@ -301,6 +322,12 @@
 		BCFD06771BFBC31E008B8989 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BC5B24FF1C0971CD00115CF9 /* facebook.png */,
+				BC5B25001C0971CD00115CF9 /* facebook@2x.png */,
+				BC5B25011C0971CD00115CF9 /* twitter.png */,
+				BC5B25021C0971CD00115CF9 /* twitter@2x.png */,
+				BCBFDD0F1C08E58B007D755F /* following.png */,
+				BCBFDD101C08E58B007D755F /* following@2x.png */,
 				BC003B051C04C17900E08E43 /* comments.png */,
 				BC003B061C04C17900E08E43 /* comments@2x.png */,
 				BC003B071C04C17900E08E43 /* likes.png */,
@@ -433,20 +460,27 @@
 				BC9111D21BFEA910000B886F /* discovericon@2x.png in Resources */,
 				159118B41BF6957B00B01CAD /* LaunchScreen.storyboard in Resources */,
 				BC003B0D1C04C17900E08E43 /* likes.png in Resources */,
+				BC5B25061C0971CD00115CF9 /* twitter@2x.png in Resources */,
 				BC003B0E1C04C17900E08E43 /* likes@2x.png in Resources */,
 				159118B11BF6957B00B01CAD /* Assets.xcassets in Resources */,
 				BC9111D61BFEA910000B886F /* notificationicon@2x.png in Resources */,
 				BC9111D81BFEA910000B886F /* posticon@2x.png in Resources */,
+				BC5B25081C0972E900115CF9 /* userSpiel.xib in Resources */,
 				BC9111D71BFEA910000B886F /* posticon.png in Resources */,
 				BC9111BA1BFE943B000B886F /* selectedTab.png in Resources */,
+				BC5B25041C0971CD00115CF9 /* facebook@2x.png in Resources */,
+				BCBFDD111C08E58B007D755F /* following.png in Resources */,
 				BC9111D91BFEA910000B886F /* profileicon.png in Resources */,
+				BCBFDD121C08E58B007D755F /* following@2x.png in Resources */,
 				BC9111DA1BFEA910000B886F /* profileicon@2x.png in Resources */,
 				159118AC1BF6957B00B01CAD /* Main.storyboard in Resources */,
+				BC5B25031C0971CD00115CF9 /* facebook.png in Resources */,
 				BC003B0F1C04C17900E08E43 /* shares.png in Resources */,
 				BC003B0C1C04C17900E08E43 /* comments@2x.png in Resources */,
 				BC9111D41BFEA910000B886F /* homeicon@2x.png in Resources */,
 				BC77F0601BFC6891000E2D9A /* navigationBackground.png in Resources */,
 				BC77F0621BFC70E7000E2D9A /* spiel.xib in Resources */,
+				BC5B25051C0971CD00115CF9 /* twitter.png in Resources */,
 				BC9111D51BFEA910000B886F /* notificationicon.png in Resources */,
 				BC9111D11BFEA910000B886F /* discovericon.png in Resources */,
 			);
@@ -473,7 +507,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBFDD141C08E8A1007D755F /* userSpielsTableViewController.swift in Sources */,
 				159118AF1BF6957B00B01CAD /* Spiel.xcdatamodeld in Sources */,
+				BC5B250A1C0974AF00115CF9 /* userSpielCell.swift in Sources */,
 				BC0171A71C06CEA000C156FF /* userProfileViewController.swift in Sources */,
 				15D58CEE1BFEF2E000A386F8 /* SpielDetailViewController.swift in Sources */,
 				BC8AE0361BFE67A700BAFBDA /* spielNavigationBar.swift in Sources */,
