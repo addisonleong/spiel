@@ -13,6 +13,7 @@ import Parse
 class SpielTableViewController: PFQueryTableViewController {
     
     @IBOutlet weak var navigationbar: UINavigationItem!
+    var users = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         UINavigationBar.appearance().setBackgroundImage(UIImage(named: "navigationBackground")!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 0, 0, 0), resizingMode: .Stretch), forBarMetrics: .Default)
@@ -59,7 +60,7 @@ class SpielTableViewController: PFQueryTableViewController {
         if let object = object {
             cell!.spielTitle?.text = object.valueForKey("title") as? String
 //            cell!.profileName?.titleLabel!.text = object.valueForKey("user") as? String
-            cell!.profileName?.setTitle(object.valueForKey("user") as? String, forState: UIControlState.Normal)
+            
             
             
             let description = object["description"] as? String
@@ -121,6 +122,8 @@ class SpielTableViewController: PFQueryTableViewController {
                     print(error)
                 } else {
                     let userImageFile = objects![0]["profile_photo"] as! PFFile
+                    let username = (objects![0]["first_name"] as? String)! + " " + (objects![0]["last_name"] as? String)!
+                    cell!.profileName?.setTitle(username, forState: UIControlState.Normal)
                     userImageFile.getDataInBackgroundWithBlock {
                         (imageData: NSData?, error: NSError?) -> Void in
                         if error == nil {
@@ -133,6 +136,11 @@ class SpielTableViewController: PFQueryTableViewController {
                 }
             }
             cell!.profileName!.addTarget(self, action: "goToProfile:", forControlEvents: .TouchUpInside)
+            cell!.spielID = object.objectId!
+            if (!users.contains((object["user"] as? String)!)) {
+                users.append((object["user"] as? String)!)
+            }
+            cell!.profileName!.tag = users.indexOf((object["user"] as? String)!)!
         }
         
         return cell
@@ -152,20 +160,14 @@ class SpielTableViewController: PFQueryTableViewController {
             if let dvc = segue.destinationViewController as? SpielDetailViewController {
                 if let index = tableView.indexPathForSelectedRow {
                     let cellData = tableView.cellForRowAtIndexPath(index) as? spielCell
-                    dvc.userName = (cellData!.profileName?.titleLabel!.text)!
-                    dvc.userPic = (cellData!.profileImage?.image)!
-                    dvc.spielImage1 = (cellData!.mainImage?.image)!
-                    dvc.spielTitle1 = (cellData!.spielTitle?.text)!
-                    dvc.spielDescription1 = cellData!.spielDescriptionFull
-                    dvc.spielComments1 = (cellData!.spielCommentCount?.text)!
-                    dvc.spielLikes1 = (cellData!.spielLikeCount?.text)!
+                    dvc.spielID = cellData!.spielID
                 }
             }
         }
         else if (segue.identifier == "toProfile") {
             if let dvc = segue.destinationViewController as? userProfileViewController {
                 if let profile = sender as? UIButton {
-                    dvc.username = profile.titleLabel!.text!
+                    dvc.username = users[profile.tag]
                     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                     appDelegate.currentUserProfileView = profile.titleLabel!.text!
                 }

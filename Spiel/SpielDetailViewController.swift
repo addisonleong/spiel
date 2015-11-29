@@ -34,19 +34,72 @@ class SpielDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profilepic!.image = userPic
-        profilename?.setTitle(userName, forState: UIControlState.Normal)
-        spielDate!.text = spielDate1
-        spielTitle!.text = spielTitle1
-        spielImage!.image = spielImage1
-        spielDescription!.text = spielDescription1
-        spielComments!.text = spielComments1
-        spielLikes!.text = spielLikes1
-        profilepic!.layer.cornerRadius = 29
-        profilepic!.layer.masksToBounds = true
-        spielImage!.layer.cornerRadius = 17
-        spielImage!.layer.masksToBounds = true
+        loadSpiel()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func loadSpiel() {
+        let query = PFQuery(className: "Spiels")
+        query.getObjectInBackgroundWithId(spielID) {
+            (object: PFObject?, error: NSError?) -> Void in
+            if error == nil && object != nil {
+                
+                let userImageFile = object!["image"] as! PFFile
+                userImageFile.getDataInBackgroundWithBlock {
+                    (imageData: NSData?, error: NSError?) -> Void in
+                    if error == nil {
+                        let spielImage = UIImage(data:imageData!)
+                        self.spielImage!.image = spielImage
+                    }
+                }
+                
+                let username = object!["user"] as? String
+                let query = PFUser.query()
+                query?.whereKey("username", equalTo: username!)
+                query?.findObjectsInBackgroundWithBlock {
+                    (objects: [PFObject]?, error: NSError?) -> Void in
+                    if let error = error {
+                        print(error)
+                    } else {
+                        let userImageFile = objects![0]["profile_photo"] as! PFFile
+                        self.profilename?.setTitle((objects![0]["first_name"] as? String)! + " " + (objects![0]["last_name"] as? String)!, forState: UIControlState.Normal)
+                        userImageFile.getDataInBackgroundWithBlock {
+                            (imageData: NSData?, error: NSError?) -> Void in
+                            if error == nil {
+                                let userPic = UIImage(data:imageData!)
+                                self.profilepic!.image = userPic
+                            }
+                        }
+                    }
+                }
+                self.spielDate!.text = object!["createdAt"] as? String
+                self.spielTitle!.text = object!["title"] as? String
+                
+                self.spielDescription!.text = object!["description"] as? String
+                
+                if (object!["likes"] != nil) {
+                    self.spielLikes!.text = object!["likes"] as? String
+                }
+                else {
+                    self.spielLikes!.text = "30 likes"
+                }
+                
+                if (object!["comments"] != nil) {
+                    self.spielComments!.text = object!["comments"] as? String
+                }
+                else {
+                    self.spielComments!.text = "10 comments"
+                }
+                
+                self.profilepic!.layer.cornerRadius = 29
+                self.profilepic!.layer.masksToBounds = true
+                self.spielImage!.layer.cornerRadius = 17
+                self.spielImage!.layer.masksToBounds = true
+            }
+            else {
+                print(error)
+            }
+        }
     }
     
     
