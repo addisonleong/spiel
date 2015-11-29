@@ -20,6 +20,7 @@ class ProfileViewController : UIViewController {
     @IBOutlet weak var followButton: UIButton!
     @IBOutlet weak var facebookButton: UIImageView!
     @IBOutlet weak var twitterButton: UIImageView!
+    var username = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,41 @@ class ProfileViewController : UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func loadUser() {
+        /*let query = PFUser.query()
+        query?.whereKey("username", equalTo: username)
+        query?.findObjectsInBackgroundWithBlock {
+            (objects: [PFObject]?, error: NSError?) -> Void in
+            if let error = error {
+                print(error)
+            } else {
+                let user = objects![0]
+                self.profilename!.text = (user["first_name"] as? String)! + " " + (user["last_name"] as? String)!
+                self.tagline!.text = user["tagline"] as? String
+                let userImageFile = user["profile_photo"] as! PFFile
+                userImageFile.getDataInBackgroundWithBlock {
+                    (imageData: NSData?, error: NSError?) -> Void in
+                    if error == nil {
+                        let eventImage = UIImage(data:imageData!)
+                        self.profilepic!.image = eventImage
+                        self.profilepic!.layer.cornerRadius = 45
+                        self.profilepic!.layer.masksToBounds = true
+                    }
+                }
+                var following = user["following"] as? String
+                var followers = user["followed_by"] as? String
+                if (following == nil) {
+                    following = "563 following"
+                }
+                if (followers == nil) {
+                    followers = "18k followers"
+                }
+                self.followers!.text = followers
+                self.following!.text = following
+            }
+        }*/
     }
     
 //    override func queryForTable() -> PFQuery {

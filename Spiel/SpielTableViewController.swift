@@ -169,7 +169,7 @@ class SpielTableViewController: PFQueryTableViewController {
                 if let profile = sender as? UIButton {
                     dvc.username = users[profile.tag]
                     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-                    appDelegate.currentUserProfileView = profile.titleLabel!.text!
+                    appDelegate.currentUserProfileView = users[profile.tag]
                 }
             }
         }

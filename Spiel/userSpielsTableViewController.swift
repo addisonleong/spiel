@@ -103,7 +103,7 @@ class userSpielsTableViewController: PFQueryTableViewController {
     
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("Show Detail", sender: tableView.cellForRowAtIndexPath(indexPath))
+        performSegueWithIdentifier("ShowDetailFromUser", sender: tableView.cellForRowAtIndexPath(indexPath))
     }
     
     func goToProfile(sender:UIButton) {
@@ -111,17 +111,11 @@ class userSpielsTableViewController: PFQueryTableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "Show Detail") {
+        if (segue.identifier == "ShowDetailFromUser") {
             if let dvc = segue.destinationViewController as? SpielDetailViewController {
                 if let index = tableView.indexPathForSelectedRow {
-                    let cellData = tableView.cellForRowAtIndexPath(index) as? spielCell
-                    dvc.userName = (cellData!.profileName?.titleLabel!.text)!
-                    dvc.userPic = (cellData!.profileImage?.image)!
-                    dvc.spielImage1 = (cellData!.mainImage?.image)!
-                    dvc.spielTitle1 = (cellData!.spielTitle?.text)!
-                    dvc.spielDescription1 = cellData!.spielDescriptionFull
-                    dvc.spielComments1 = (cellData!.spielCommentCount?.text)!
-                    dvc.spielLikes1 = (cellData!.spielLikeCount?.text)!
+                    let cellData = tableView.cellForRowAtIndexPath(index) as? userSpielCell
+                    dvc.spielID = cellData!.spielID
                 }
             }
         }

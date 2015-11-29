@@ -187,7 +187,7 @@
                         <viewControllerLayoutGuide type="bottom" id="JBf-RT-dRx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YG5-wg-JTh">
-                        <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="310"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OVx-Hs-GLb">
@@ -716,6 +716,9 @@
                             <outlet property="delegate" destination="Np1-fD-muL" id="FfM-jr-Lq8"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="pUb-rL-eIF" kind="show" identifier="ShowDetailFromUser" id="t5h-wL-PV7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWb-b3-XCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -734,4 +737,7 @@
         <image name="profileicon.png" width="30" height="30"/>
         <image name="twitter.png" width="17" height="14"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="t5h-wL-PV7"/>
+    </inferredMetricsTieBreakers>
 </document>
