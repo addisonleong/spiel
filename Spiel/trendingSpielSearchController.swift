@@ -99,6 +99,18 @@ class trendingSpielViewController: PFQueryTableViewController {
                     cell!.mainImage!.layer.masksToBounds = true
                 }
             }
+            let username = object["user"] as? String
+            let query = PFUser.query()
+            query?.whereKey("username", equalTo: username!)
+            query?.findObjectsInBackgroundWithBlock {
+                (objects: [PFObject]?, error: NSError?) -> Void in
+                if let error = error {
+                    print(error)
+                } else {
+                    cell!.profileName = (objects![0]["first_name"] as? String)! + " " + (objects![0]["last_name"] as? String)!
+                }
+            }
+            cell!.spielDescription = (object["description"] as? String)!
             
             cell!.spielID = (object.valueForKey("objectId") as? String)!
         }

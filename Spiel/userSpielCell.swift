@@ -10,12 +10,22 @@ import Foundation
 import UIKit
 import ParseUI
 import Parse
+import Social
 
 class userSpielCell: PFTableViewCell {
+    var profileName = String()
+    var spielDescription = String()
     @IBOutlet weak var mainImage:UIImageView?
     @IBOutlet weak var spielNameDate:UILabel?
     @IBAction func share(sender: AnyObject) {
+        let facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
         
+        var text = "Check this out!"
+        text += "\n-\n" + profileName + ": [" + spielTitle!.text! + "] " + spielDescription + " - Read More on Spiel"
+        facebookSheet.setInitialText(text)
+        facebookSheet.addImage(mainImage!.image)
+        
+        UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(facebookSheet, animated: true, completion: nil)
     }
     @IBOutlet weak var spielTitle:UILabel?
     @IBOutlet weak var spielComments:UIImageView?
