@@ -27,8 +27,8 @@ class addSpielController: UIViewController, UIPickerViewDataSource, UIPickerView
         spielCategory.dataSource = self
         spielCategory.delegate = self
         picker.delegate = self
-        spielTitle.delegate = self
-        spielDescription.delegate = self
+        self.spielTitle.delegate = self
+        self.spielDescription.delegate = self
         spielDescription.layer.borderWidth = 2
         spielDescription.layer.borderColor = UIColor(red: 161/255, green: 214/255, blue: 215/255, alpha: 1).CGColor
         spielDescription.layer.cornerRadius = 5
@@ -47,6 +47,14 @@ class addSpielController: UIViewController, UIPickerViewDataSource, UIPickerView
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
+    }
+    
+    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
