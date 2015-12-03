@@ -14,9 +14,15 @@ import Parse
 class userSpielCell: PFTableViewCell {
     @IBOutlet weak var mainImage:UIImageView?
     @IBOutlet weak var spielNameDate:UILabel?
+    @IBAction func share(sender: AnyObject) {
+        
+    }
     @IBOutlet weak var spielTitle:UILabel?
     @IBOutlet weak var spielComments:UIImageView?
     @IBOutlet weak var spielLikes:UIImageView?
+    @IBAction func like(sender: AnyObject) {
+        
+    }
     @IBOutlet weak var spielCommentCount:UILabel?
     @IBOutlet weak var spielLikeCount:UILabel?
     @IBOutlet weak var spielShare: UIImageView?

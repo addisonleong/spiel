@@ -1,8 +1,8 @@
 //
-//  userSpielsTableViewController.swift
+//  trendingSpielSearchController.swift
 //  Spiel
 //
-//  Created by Addison Leong on 11/27/15.
+//  Created by Addison Leong on 12/1/15.
 //  Copyright © 2015 SunMi Lee. All rights reserved.
 //
 
@@ -10,13 +10,18 @@ import Foundation
 import ParseUI
 import Parse
 
-class userSpielsTableViewController: PFQueryTableViewController {
+class trendingSpielViewController: PFQueryTableViewController {
     
     var username = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handler:", name: "Search", object: nil)
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func handler(notif: NSNotification) {
+         self.loadObjects()
     }
     
     override init(style: UITableViewStyle, className: String?) {
@@ -38,8 +43,8 @@ class userSpielsTableViewController: PFQueryTableViewController {
     override func queryForTable() -> PFQuery {
         let query = PFQuery(className: "Spiels")
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let username = appDelegate.currentUserProfileView
-        query.whereKey("user", equalTo: username)
+        let search = appDelegate.searchSpiel
+        query.whereKey("category", equalTo: search)
         // If no objects are loaded in memory, we look to the cache first to fill the table
         // and then subsequently do a query against the network.
         if self.objects!.count == 0 {
@@ -103,15 +108,15 @@ class userSpielsTableViewController: PFQueryTableViewController {
     
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("ShowDetailFromUser", sender: tableView.cellForRowAtIndexPath(indexPath))
+        performSegueWithIdentifier("ShowDetailFromSearch", sender: tableView.cellForRowAtIndexPath(indexPath))
     }
     
     func goToProfile(sender:UIButton) {
-        self.performSegueWithIdentifier("toProfile", sender: sender)
+        self.performSegueWithIdentifier("toProfileFromSearch", sender: sender)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "ShowDetailFromUser") {
+        if (segue.identifier == "ShowDetailFromSearch") {
             if let dvc = segue.destinationViewController as? SpielDetailViewController {
                 if let index = tableView.indexPathForSelectedRow {
                     let cellData = tableView.cellForRowAtIndexPath(index) as? userSpielCell
@@ -119,7 +124,7 @@ class userSpielsTableViewController: PFQueryTableViewController {
                 }
             }
         }
-        else if (segue.identifier == "toProfile") {
+        else if (segue.identifier == "toProfileFromSearch") {
             if let dvc = segue.destinationViewController as? userProfileViewController {
                 if let profile = sender as? UIButton {
                     dvc.username = profile.titleLabel!.text!

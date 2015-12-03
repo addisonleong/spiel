@@ -22,6 +22,13 @@ class spielCell: PFTableViewCell {
     @IBOutlet weak var spielLikes:UIImageView?
     @IBOutlet weak var spielCommentCount:UILabel?
     @IBOutlet weak var spielLikeCount:UILabel?
+    @IBAction func share(sender: AnyObject) {
+        print("share")
+    }
+    @IBAction func like(sender: AnyObject) {
+    }
+    @IBAction func comment(sender: AnyObject) {
+    }
     @IBOutlet weak var spielShare: UIImageView?
     @IBOutlet weak var spielShareLabel: UILabel?
     
