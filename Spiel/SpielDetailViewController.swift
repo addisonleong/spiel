@@ -62,6 +62,7 @@ class SpielDetailViewController: UIViewController {
                         print(error)
                     } else {
                         let userImageFile = objects![0]["profile_photo"] as! PFFile
+                        self.userName = (objects![0]["username"] as? String)!
                         self.profilename?.setTitle((objects![0]["first_name"] as? String)! + " " + (objects![0]["last_name"] as? String)!, forState: UIControlState.Normal)
                         userImageFile.getDataInBackgroundWithBlock {
                             (imageData: NSData?, error: NSError?) -> Void in
@@ -98,6 +99,19 @@ class SpielDetailViewController: UIViewController {
             }
             else {
                 print(error)
+            }
+        }
+    }
+    @IBAction func goToProfile(sender: AnyObject) {
+        self.performSegueWithIdentifier("toProfileFromDetail", sender: sender)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "toProfileFromDetail") {
+            if let dvc = segue.destinationViewController as? userProfileViewController {
+                dvc.username = userName
+                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                appDelegate.currentUserProfileView = userName
             }
         }
     }
