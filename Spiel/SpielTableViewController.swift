@@ -17,7 +17,13 @@ class SpielTableViewController: PFQueryTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         UINavigationBar.appearance().setBackgroundImage(UIImage(named: "navigationBackground")!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 0, 0, 0), resizingMode: .Stretch), forBarMetrics: .Default)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handler:", name: "GoToPost", object: nil)
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func handler(notif: NSNotification) {
+        //performSegueWithIdentifier("Show Detail", sender: nil)
+        self.loadObjects()
     }
     
     override init(style: UITableViewStyle, className: String?) {
@@ -161,6 +167,10 @@ class SpielTableViewController: PFQueryTableViewController {
                 if let index = tableView.indexPathForSelectedRow {
                     let cellData = tableView.cellForRowAtIndexPath(index) as? spielCell
                     dvc.spielID = cellData!.spielID
+                }
+                else {
+                    /*let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    dvc.spielID = appDelegate.posted*/
                 }
             }
         }

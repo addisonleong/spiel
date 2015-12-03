@@ -169,11 +169,17 @@
                                     <constraint firstItem="SU8-dq-8e0" firstAttribute="leading" secondItem="6b5-Ki-SAS" secondAttribute="leading" constant="8" id="uNi-He-9tE"/>
                                 </constraints>
                             </view>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lR2-8V-g4f">
-                                <rect key="frame" x="207" y="113" width="373" height="136"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lR2-8V-g4f">
+                                <rect key="frame" x="207" y="106" width="373" height="143"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="170" id="jqf-dP-V2J"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="Eq1-7J-yOw"/>
+                                    <constraint firstAttribute="height" constant="143" id="jqf-dP-V2J"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Eq1-7J-yOw"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="fO0-dl-xz2" id="iNJ-jR-fdw"/>
                                     <outlet property="delegate" destination="fO0-dl-xz2" id="xRa-Lt-6Ud"/>
@@ -181,16 +187,20 @@
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcX-oc-Mxd">
                                 <rect key="frame" x="226" y="495" width="148" height="41"/>
-                                <state key="normal" backgroundImage="next.png"/>
+                                <state key="normal" backgroundImage="finishbutton.png"/>
+                                <connections>
+                                    <action selector="post:" destination="d4q-Zn-0eP" eventType="touchDown" id="aIM-vF-vaR"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose a spiel category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWR-3s-7mo">
                                 <rect key="frame" x="207" y="70" width="373" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hello.png" translatesAutoresizingMaskIntoConstraints="NO" id="uUo-PD-odF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hello.png" translatesAutoresizingMaskIntoConstraints="NO" id="uUo-PD-odF">
                                 <rect key="frame" x="20" y="70" width="179" height="179"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="179" id="Wzo-jP-6Nu"/>
                                     <constraint firstAttribute="height" constant="179" id="ZsR-hr-YlZ"/>
@@ -220,13 +230,13 @@
                             <constraint firstItem="uUo-PD-odF" firstAttribute="top" secondItem="7Kb-Eg-UYL" secondAttribute="bottom" constant="26" id="3cB-0Y-DHX"/>
                             <constraint firstItem="bot-io-Wky" firstAttribute="top" secondItem="uUo-PD-odF" secondAttribute="top" id="4B7-fy-85T"/>
                             <constraint firstItem="EWR-3s-7mo" firstAttribute="leading" secondItem="bot-io-Wky" secondAttribute="trailing" constant="17" id="7Yd-hE-ne6"/>
-                            <constraint firstItem="6b5-Ki-SAS" firstAttribute="top" secondItem="lR2-8V-g4f" secondAttribute="bottom" constant="30" id="AEk-jW-kl7"/>
+                            <constraint firstItem="6b5-Ki-SAS" firstAttribute="top" secondItem="lR2-8V-g4f" secondAttribute="bottom" constant="15" id="AEk-jW-kl7"/>
                             <constraint firstItem="vcX-oc-Mxd" firstAttribute="top" secondItem="6b5-Ki-SAS" secondAttribute="bottom" constant="21" id="Gj9-sK-G8t"/>
                             <constraint firstItem="6b5-Ki-SAS" firstAttribute="leading" secondItem="fO0-dl-xz2" secondAttribute="leadingMargin" id="IiD-m3-NMw"/>
                             <constraint firstItem="6b5-Ki-SAS" firstAttribute="trailing" secondItem="fO0-dl-xz2" secondAttribute="trailingMargin" id="LYf-tR-qwt"/>
-                            <constraint firstItem="lR2-8V-g4f" firstAttribute="top" secondItem="EWR-3s-7mo" secondAttribute="bottom" constant="22" id="MFr-Pr-nNs"/>
+                            <constraint firstItem="lR2-8V-g4f" firstAttribute="top" secondItem="EWR-3s-7mo" secondAttribute="bottom" constant="15" id="MFr-Pr-nNs"/>
                             <constraint firstItem="bot-io-Wky" firstAttribute="top" secondItem="7Kb-Eg-UYL" secondAttribute="bottom" constant="21" id="Mby-Fd-xqN"/>
-                            <constraint firstItem="EWR-3s-7mo" firstAttribute="top" secondItem="7Kb-Eg-UYL" secondAttribute="bottom" constant="26" id="PWs-Q9-GXq"/>
+                            <constraint firstItem="EWR-3s-7mo" firstAttribute="top" secondItem="7Kb-Eg-UYL" secondAttribute="bottom" constant="30" id="PWs-Q9-GXq"/>
                             <constraint firstItem="bot-io-Wky" firstAttribute="leading" secondItem="uUo-PD-odF" secondAttribute="leading" id="RiC-LN-HKn"/>
                             <constraint firstItem="lR2-8V-g4f" firstAttribute="trailing" secondItem="fO0-dl-xz2" secondAttribute="trailingMargin" id="Rxj-vy-IPr"/>
                             <constraint firstItem="vcX-oc-Mxd" firstAttribute="top" secondItem="6b5-Ki-SAS" secondAttribute="bottom" constant="21" id="ZLP-gY-Ish"/>
@@ -988,11 +998,11 @@
         <image name="comments.png" width="22" height="22"/>
         <image name="discovericon.png" width="30" height="30"/>
         <image name="facebook.png" width="10" height="18"/>
+        <image name="finishbutton.png" width="148" height="41"/>
         <image name="following.png" width="64" height="19"/>
         <image name="hello.png" width="130" height="130"/>
         <image name="homeicon.png" width="30" height="30"/>
         <image name="likes.png" width="20" height="20"/>
-        <image name="next.png" width="148" height="41"/>
         <image name="notificationicon.png" width="30" height="30"/>
         <image name="posticon.png" width="30" height="30"/>
         <image name="profileicon.png" width="30" height="30"/>

@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var currentUserProfileView = String()
     var searchSpiel = String()
     var searchAutocomplete = ["book", "music", "tech", "food", "entertainment", "movies"]
+    var posted = String()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

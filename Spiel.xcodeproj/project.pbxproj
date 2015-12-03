@@ -25,6 +25,8 @@
 		BC003B101C04C17900E08E43 /* shares@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC003B0A1C04C17900E08E43 /* shares@2x.png */; };
 		BC0171A71C06CEA000C156FF /* userProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0171A61C06CEA000C156FF /* userProfileViewController.swift */; };
 		BC0421601C0E6DEB00FCFB88 /* searchAutocompleteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04215F1C0E6DEB00FCFB88 /* searchAutocompleteController.swift */; };
+		BC2D321F1C102F480079A45C /* finishbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D321D1C102F480079A45C /* finishbutton.png */; };
+		BC2D32201C102F480079A45C /* finishbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D321E1C102F480079A45C /* finishbutton@2x.png */; };
 		BC2EBE551C0EA7CD00E339D2 /* addImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2EBE511C0EA7CD00E339D2 /* addImage.png */; };
 		BC2EBE561C0EA7CD00E339D2 /* addImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2EBE521C0EA7CD00E339D2 /* addImage@2x.png */; };
 		BC2EBE5B1C0EA8E900E339D2 /* hello.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2EBE591C0EA8E900E339D2 /* hello.png */; };
@@ -134,6 +136,8 @@
 		BC003B0A1C04C17900E08E43 /* shares@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shares@2x.png"; sourceTree = "<group>"; };
 		BC0171A61C06CEA000C156FF /* userProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userProfileViewController.swift; sourceTree = "<group>"; };
 		BC04215F1C0E6DEB00FCFB88 /* searchAutocompleteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchAutocompleteController.swift; sourceTree = "<group>"; };
+		BC2D321D1C102F480079A45C /* finishbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finishbutton.png; sourceTree = "<group>"; };
+		BC2D321E1C102F480079A45C /* finishbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "finishbutton@2x.png"; sourceTree = "<group>"; };
 		BC2EBE511C0EA7CD00E339D2 /* addImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addImage.png; sourceTree = "<group>"; };
 		BC2EBE521C0EA7CD00E339D2 /* addImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addImage@2x.png"; sourceTree = "<group>"; };
 		BC2EBE591C0EA8E900E339D2 /* hello.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hello.png; sourceTree = "<group>"; };
@@ -346,6 +350,8 @@
 		BCFD06771BFBC31E008B8989 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BC2D321D1C102F480079A45C /* finishbutton.png */,
+				BC2D321E1C102F480079A45C /* finishbutton@2x.png */,
 				BC2EBE5D1C0EAB0E00E339D2 /* next.png */,
 				BC2EBE5E1C0EAB0E00E339D2 /* next@2x.png */,
 				BC2EBE591C0EA8E900E339D2 /* hello.png */,
@@ -512,10 +518,12 @@
 				BC003B0C1C04C17900E08E43 /* comments@2x.png in Resources */,
 				BC2EBE5B1C0EA8E900E339D2 /* hello.png in Resources */,
 				BC2EBE551C0EA7CD00E339D2 /* addImage.png in Resources */,
+				BC2D321F1C102F480079A45C /* finishbutton.png in Resources */,
 				BC9111D41BFEA910000B886F /* homeicon@2x.png in Resources */,
 				BC77F0601BFC6891000E2D9A /* navigationBackground.png in Resources */,
 				BC77F0621BFC70E7000E2D9A /* spiel.xib in Resources */,
 				BC2EBE5F1C0EAB0E00E339D2 /* next.png in Resources */,
+				BC2D32201C102F480079A45C /* finishbutton@2x.png in Resources */,
 				BC5B25051C0971CD00115CF9 /* twitter.png in Resources */,
 				BC9111D51BFEA910000B886F /* notificationicon.png in Resources */,
 				BC9111D11BFEA910000B886F /* discovericon.png in Resources */,
@@ -634,6 +642,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -679,6 +688,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -701,6 +711,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Spiel",
@@ -716,6 +727,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Spiel",
