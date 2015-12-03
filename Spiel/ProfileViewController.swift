@@ -12,18 +12,19 @@ import Parse
 
 class ProfileViewController : UIViewController {
 
-    @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var summary: UILabel!
-    @IBOutlet weak var followers: UILabel!
-    @IBOutlet weak var following: UILabel!
-    @IBOutlet weak var followButton: UIButton!
-    @IBOutlet weak var facebookButton: UIImageView!
-    @IBOutlet weak var twitterButton: UIImageView!
-    var username = String()
+    @IBOutlet weak var profilepic:UIImageView?
+    @IBOutlet weak var profilename:UILabel?
+    @IBOutlet weak var tagline:UILabel?
+    @IBOutlet weak var followers:UILabel?
+    @IBOutlet weak var following:UILabel?
+    @IBOutlet weak var follow:UIButton?
+    @IBOutlet weak var facebook:UIButton?
+    @IBOutlet weak var twitter:UIButton?
+    var username = "katherine"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadUser()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -33,7 +34,7 @@ class ProfileViewController : UIViewController {
     }
     
     func loadUser() {
-        /*let query = PFUser.query()
+        let query = PFUser.query()
         query?.whereKey("username", equalTo: username)
         query?.findObjectsInBackgroundWithBlock {
             (objects: [PFObject]?, error: NSError?) -> Void in
@@ -64,7 +65,7 @@ class ProfileViewController : UIViewController {
                 self.followers!.text = followers
                 self.following!.text = following
             }
-        }*/
+        }
     }
     
 //    override func queryForTable() -> PFQuery {
