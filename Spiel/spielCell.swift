@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import ParseUI
 import Parse
+import Social
 
 class spielCell: PFTableViewCell {
     @IBOutlet weak var mainImage:UIImageView?
@@ -23,7 +24,14 @@ class spielCell: PFTableViewCell {
     @IBOutlet weak var spielCommentCount:UILabel?
     @IBOutlet weak var spielLikeCount:UILabel?
     @IBAction func share(sender: AnyObject) {
-        print("share")
+        let facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+
+        var text = "Check this out!"
+        text += "\n-\n" + profileName!.currentTitle! + ": [" + spielTitle!.text! + "] " + spielDescription!.text! + " - Read More on Spiel"
+        facebookSheet.setInitialText(text)
+        facebookSheet.addImage(mainImage!.image)
+        
+        UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(facebookSheet, animated: true, completion: nil)
     }
     @IBAction func like(sender: AnyObject) {
     }
