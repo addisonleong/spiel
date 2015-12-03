@@ -46,6 +46,7 @@ class searchSpielController: UIViewController, UISearchBarDelegate {
         appDelegate.searchSpiel = search.text!
         titleLabel.text = "Trending " + search.text! + " Spiels"
         NSNotificationCenter.defaultCenter().postNotificationName("Search", object: nil);
+        search.resignFirstResponder()
     }
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
