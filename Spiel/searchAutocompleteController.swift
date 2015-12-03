@@ -55,7 +55,7 @@ class searchAutocompleteController: UITableViewController {
             value = autocomplete[indexPath.row]
         }
         else {
-            value = "No results"
+            value = "Search above to see results"
         }
         cell.textLabel!.text = value as? String
         return cell
