@@ -17,7 +17,6 @@ class SpielTableViewController: PFQueryTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         UINavigationBar.appearance().setBackgroundImage(UIImage(named: "navigationBackground")!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 0, 0, 0), resizingMode: .Stretch), forBarMetrics: .Default)
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "handler:", name: "GoToPost", object: nil)
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -47,9 +46,9 @@ class SpielTableViewController: PFQueryTableViewController {
         let query = PFQuery(className: "Spiels")
         // If no objects are loaded in memory, we look to the cache first to fill the table
         // and then subsequently do a query against the network.
-        if self.objects!.count == 0 {
+        /*if self.objects!.count == 0 {
             query.cachePolicy = .CacheThenNetwork
-        }
+        }*/
         query.orderByDescending("createdAt")
         return query
     }
@@ -65,10 +64,9 @@ class SpielTableViewController: PFQueryTableViewController {
         
         // Configure the cell to show todo item with a priority at the bottom
         if let object = object {
+            print(object)
             cell!.spielTitle?.text = object.valueForKey("title") as? String
 //            cell!.profileName?.titleLabel!.text = object.valueForKey("user") as? String
-            
-            
             
             let description = object["description"] as? String
             var index = description?.endIndex
@@ -82,7 +80,7 @@ class SpielTableViewController: PFQueryTableViewController {
                 substring = substring! + "..."
             }
             
-            cell!.spielDescription?.text = substring as? String!
+            cell!.spielDescription?.text = substring
             //cell!.spielDate?.text = object.valueForKey("createdAt") as? String
             cell!.spielDescriptionFull = (object["description"] as? String)!
             if (object["likes"] != nil) {

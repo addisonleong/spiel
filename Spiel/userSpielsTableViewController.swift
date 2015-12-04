@@ -42,9 +42,9 @@ class userSpielsTableViewController: PFQueryTableViewController {
         query.whereKey("user", equalTo: username)
         // If no objects are loaded in memory, we look to the cache first to fill the table
         // and then subsequently do a query against the network.
-        if self.objects!.count == 0 {
+        /*if self.objects!.count == 0 {
             query.cachePolicy = .CacheThenNetwork
-        }
+        }*/
         query.orderByDescending("createdAt")
         return query
     }

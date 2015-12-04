@@ -472,7 +472,6 @@
 				TargetAttributes = {
 					159118A21BF6957B00B01CAD = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = 87TAL274RB;
 					};
 					159118B91BF6957C00B01CAD = {
 						CreatedOnToolsVersion = 7.1.1;
