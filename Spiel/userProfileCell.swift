@@ -37,7 +37,7 @@ class userProfileCell: PFTableViewCell {
     @IBOutlet weak var spielLikeCount:UILabel?
     @IBOutlet weak var spielShare: UIImageView?
     @IBOutlet weak var spielShareLabel: UILabel?
-    @IBOutlet weak var deleteButton: UIButton?
+    @IBOutlet weak var deleteButton: customButton?
     
     var parseObject:PFObject?
     var spielID = String()

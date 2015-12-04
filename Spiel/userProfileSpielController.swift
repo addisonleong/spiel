@@ -16,7 +16,12 @@ class userProfileSpielController: PFQueryTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handler:", name: "reloadUserProfile", object: nil)
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func handler(notif: NSNotification) {
+        self.loadObjects()
     }
     
     override init(style: UITableViewStyle, className: String?) {
@@ -59,7 +64,7 @@ class userProfileSpielController: PFQueryTableViewController {
         // Configure the cell to show todo item with a priority at the bottom
         if let object = object {
             cell!.spielTitle?.text = object.valueForKey("title") as? String
-            cell!.spielNameDate?.text = "your" + (object["category"] as? String)! + " Spiel"
+            cell!.spielNameDate?.text = "your " + (object["category"] as? String)! + " Spiel"
             
             if (object["likes"] != nil) {
                 cell!.spielLikeCount?.text = object["likes"] as? String
@@ -105,17 +110,28 @@ class userProfileSpielController: PFQueryTableViewController {
             }
             cell!.deleteButton!.addTarget(self, action: "deleteSpiel:", forControlEvents: .TouchUpInside)
             cell!.spielDescription = (object["description"] as? String)!
-            
+            cell!.deleteButton!.buttonId = object.objectId!
             cell!.spielID = (object.valueForKey("objectId") as? String)!
         }
         
         return cell
     }
     
-    func deleteSpiel(sender: UIButton) {
+    func deleteSpiel(sender: customButton) {
         let refreshAlert = UIAlertController(title: "Delete This Spiel?", message: "Are you sure you want to delete this Spiel?", preferredStyle: UIAlertControllerStyle.Alert)
         
         refreshAlert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action: UIAlertAction!) in
+            let query = PFQuery(className:"Spiels")
+            query.getObjectInBackgroundWithId(sender.buttonId) {
+                (object: PFObject?, error: NSError?) -> Void in
+                if error == nil && object != nil {
+                    object?.deleteInBackgroundWithBlock { (succeeded: Bool, error: NSError?) -> Void in
+                         NSNotificationCenter.defaultCenter().postNotificationName("reloadUserProfile", object: nil);
+                    }
+                } else {
+                    
+                }
+            }
             
         }))
         

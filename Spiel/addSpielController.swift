@@ -100,7 +100,7 @@ class addSpielController: UIViewController, UIPickerViewDataSource, UIPickerView
             if (success) {
                 self.spielTitle.text = nil
                 self.spielDescription.text = nil
-                self.imagePreview.image = UIImage(named: "addImage")
+                self.imagePreview.image = UIImage(named: "hello")
                 self.tabBarController!.selectedIndex = 0
                 /*let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 appDelegate.posted = post.objectId!*/

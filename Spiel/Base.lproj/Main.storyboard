@@ -185,7 +185,7 @@
                                     <outlet property="delegate" destination="fO0-dl-xz2" id="xRa-Lt-6Ud"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcX-oc-Mxd">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcX-oc-Mxd">
                                 <rect key="frame" x="226" y="495" width="148" height="41"/>
                                 <state key="normal" backgroundImage="finishbutton.png"/>
                                 <connections>
