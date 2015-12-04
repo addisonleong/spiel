@@ -56,6 +56,8 @@
 		BC77F08F1BFC7E4B000E2D9A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F07C1BFC7C3F000E2D9A /* StoreKit.framework */; };
 		BC77F0901BFC7E4B000E2D9A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F07D1BFC7C3F000E2D9A /* SystemConfiguration.framework */; };
 		BC77F0931BFC7E6B000E2D9A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC77F0781BFC7C3F000E2D9A /* libsqlite3.tbd */; };
+		BC786BAF1C116EFD00A852C0 /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC33B9991C116A0400DE0261 /* WorkSans-Bold.ttf */; };
+		BC786BB01C116EFD00A852C0 /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC33B99A1C116A0400DE0261 /* WorkSans-Regular.ttf */; };
 		BC8AE0361BFE67A700BAFBDA /* spielNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8AE0351BFE67A700BAFBDA /* spielNavigationBar.swift */; };
 		BC8AE0381BFE6D8E00BAFBDA /* spielTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8AE0371BFE6D8E00BAFBDA /* spielTabBarController.swift */; };
 		BC90C1F31C0E347B00F2DB6C /* searchSpielController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC90C1F21C0E347B00F2DB6C /* searchSpielController.swift */; };
@@ -507,6 +509,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC786BAF1C116EFD00A852C0 /* WorkSans-Bold.ttf in Resources */,
+				BC786BB01C116EFD00A852C0 /* WorkSans-Regular.ttf in Resources */,
 				BC003B101C04C17900E08E43 /* shares@2x.png in Resources */,
 				BC9111D31BFEA910000B886F /* homeicon.png in Resources */,
 				BC003B0B1C04C17900E08E43 /* comments.png in Resources */,

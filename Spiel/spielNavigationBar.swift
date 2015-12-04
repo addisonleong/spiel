@@ -18,6 +18,7 @@ class spielNavigationBar: UINavigationController {
         UINavigationBar.appearance().setBackgroundImage(UIImage(named: "navigationBackground")!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 0, 0, 0), resizingMode: .Stretch), forBarMetrics: .Default)
         let titleColor:NSDictionary = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         UINavigationBar.appearance().titleTextAttributes = titleColor as! [String:AnyObject]
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
