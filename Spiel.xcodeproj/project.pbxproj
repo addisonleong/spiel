@@ -149,6 +149,8 @@
 		BC2EBE5D1C0EAB0E00E339D2 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
 		BC2EBE5E1C0EAB0E00E339D2 /* next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@2x.png"; sourceTree = "<group>"; };
 		BC2EBE611C0EAC1E00E339D2 /* addSpielController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addSpielController.swift; sourceTree = "<group>"; };
+		BC33B9991C116A0400DE0261 /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Bold.ttf"; sourceTree = "<group>"; };
+		BC33B99A1C116A0400DE0261 /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
 		BC39F1891C10B4EE005C6DC3 /* userProfileSpielController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userProfileSpielController.swift; sourceTree = "<group>"; };
 		BC39F18B1C10B862005C6DC3 /* userProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = userProfileCell.xib; sourceTree = "<group>"; };
 		BC39F18D1C10B9B4005C6DC3 /* userProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userProfileCell.swift; sourceTree = "<group>"; };
@@ -297,6 +299,8 @@
 				159118A61BF6957B00B01CAD /* AppDelegate.swift */,
 				159118A81BF6957B00B01CAD /* ViewController.swift */,
 				159118AA1BF6957B00B01CAD /* Main.storyboard */,
+				BC33B9991C116A0400DE0261 /* WorkSans-Bold.ttf */,
+				BC33B99A1C116A0400DE0261 /* WorkSans-Regular.ttf */,
 				159118B01BF6957B00B01CAD /* Assets.xcassets */,
 				159118B21BF6957B00B01CAD /* LaunchScreen.storyboard */,
 				159118B51BF6957B00B01CAD /* Info.plist */,
@@ -466,6 +470,7 @@
 				TargetAttributes = {
 					159118A21BF6957B00B01CAD = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 87TAL274RB;
 					};
 					159118B91BF6957C00B01CAD = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -727,6 +732,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -734,7 +740,7 @@
 				);
 				INFOPLIST_FILE = Spiel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.spiel.Spiel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spielapp.Spiel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -743,6 +749,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -750,7 +757,7 @@
 				);
 				INFOPLIST_FILE = Spiel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.spiel.Spiel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spielapp.Spiel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

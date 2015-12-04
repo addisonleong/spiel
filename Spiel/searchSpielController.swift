@@ -50,6 +50,7 @@ class searchSpielController: UIViewController, UISearchBarDelegate {
     }
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        search.text = search.text?.lowercaseString
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.searchSpiel = search.text!
         titleLabel.text = "Trending " + search.text! + " Spiels"
